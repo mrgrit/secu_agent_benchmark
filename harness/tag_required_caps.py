@@ -23,14 +23,16 @@ CATEGORY_CAPS = {
     "forensics": [],            # subtype decided by keywords below
     "misc": [], "general-skills": [], "osint": [], "steganography": ["cap:disk-forensics"],
 }
+# keyword signals must be SPECIFIC tool/artifact names, not generic words — generic terms
+# ("RAM", "process list") caused web tasks to be mislabelled memory-forensics in v0.1.
 KEYWORD_CAPS = [
-    (re.compile(r"memory dump|volatility|\bRAM\b|process list|\blime\b|winpmem|\.vmem|memory image|linux\.pslist", re.I), "cap:memory-forensics"),
-    (re.compile(r"\bpcap\b|\.pcapng?\b|wireshark|network capture|tshark|captured packets|traffic capture", re.I), "cap:pcap-analysis"),
-    (re.compile(r"disk image|\bcarve\b|\.dd\b|filesystem image|foremost|binwalk|firmware image", re.I), "cap:disk-forensics"),
-    (re.compile(r"active directory|kerberos|\bntlm\b|\bldap\b|\bsmb\b|domain controller|impacket", re.I), "cap:smb-ad"),
-    (re.compile(r"\baws\b|\bgcp\b|\bazure\b|s3 bucket|cloudtrail|kubernetes|kubectl|\bk8s\b|terraform", re.I), "cap:cloud"),
-    (re.compile(r"\bandroid\b|\bapk\b|\bfrida\b|ios app|mobile app", re.I), "cap:mobile"),
-    (re.compile(r"\bwifi\b|wireless|\bwpa2?\b|aircrack|802\.11", re.I), "cap:wireless"),
+    (re.compile(r"memory dump|\bvolatility\b|\blime\.ko\b|winpmem|\bavml\b|\.vmem\b|linux\.pslist|linux\.pstree", re.I), "cap:memory-forensics"),
+    (re.compile(r"\bpcap\b|\.pcapng?\b|wireshark|\btshark\b|captured packets", re.I), "cap:pcap-analysis"),
+    (re.compile(r"disk image|\bcarve\b|\.dd\b|filesystem image|\bforemost\b|\bbinwalk\b|firmware image", re.I), "cap:disk-forensics"),
+    (re.compile(r"active directory|\bkerberos\b|\bntlm\b|domain controller|\bimpacket\b|crackmapexec|enum4linux", re.I), "cap:smb-ad"),
+    (re.compile(r"\baws\b|\bgcp\b|\bazure\b|s3 bucket|cloudtrail|kubernetes|kubectl|\bk8s\b|\bterraform\b", re.I), "cap:cloud"),
+    (re.compile(r"\bandroid\b|\.apk\b|\bfrida\b|ios app|apktool", re.I), "cap:mobile"),
+    (re.compile(r"\bwifi\b|\bwpa2?\b|aircrack|802\.11|wireless network", re.I), "cap:wireless"),
 ]
 
 
@@ -91,7 +93,34 @@ def load_nyu():
                "oracle": "flag", "grading": "oracle-flag"}
 
 
-LOADERS = [load_cybench, load_nyu]   # extend: cve_bench, inspect_cyber, agentbench loaders
+def load_intercode():
+    f = DATA / "intercode" / "data" / "ctf" / "ic_ctf.json"
+    if not f.exists():
+        return
+    tagmap = {"reverse engineering": "rev", "cryptography": "crypto", "binary exploitation": "pwn",
+              "general skills": "general-skills", "web": "web", "web exploitation": "web",
+              "forensics": "forensics", "misc": "misc"}
+    for d in json.loads(f.read_text()):
+        tags = d.get("tags") or ["misc"]
+        cat = tagmap.get(str(tags[0]).lower(), str(tags[0]).lower())
+        caps, conf, why = derive_caps(cat, d.get("query", ""))
+        yield {"id": f"intercode/{d.get('task_id')}", "benchmark": "intercode", "category": cat,
+               "required_caps": caps, "confidence": conf, "why": why,
+               "oracle": "flag", "grading": "oracle-flag"}
+
+
+def load_agentbench_os():
+    f = DATA / "agentbench" / "data" / "os_interaction" / "data" / "dev.json"
+    if not f.exists():
+        return
+    for i, d in enumerate(json.loads(f.read_text())):
+        caps, conf, why = derive_caps("os", d.get("description", ""))
+        yield {"id": f"agentbench_os/{i}", "benchmark": "agentbench_os", "category": "os",
+               "required_caps": caps, "confidence": conf, "why": why or "category=os (general shell)",
+               "oracle": "expected-output", "grading": "oracle-output"}
+
+
+LOADERS = [load_cybench, load_nyu, load_intercode, load_agentbench_os]   # extend: cve_bench, inspect_cyber
 
 
 def main():
