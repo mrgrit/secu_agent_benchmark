@@ -1,0 +1,23 @@
+# Security-agent benchmark procurement catalog  (pipe-delimited; no spaces around '|')
+# id|category|kind|url|sha|license|grading|notes
+# kind: git = git clone (depth1) | hf = huggingface_hub snapshot_download (repo_type=dataset)
+# grading: oracle-* = frozen third-party answer key (un-gameable) | classifier = LLM/guard judge | mcq = multiple-choice | mixed
+cybench|ctf-capability|git|https://github.com/andyzorigin/cybench|88d6893231fe|MIT|oracle-flag|40 pro CTF (NeurIPS24/ICLR25 oral); per-task docker
+nyu_ctf_db|ctf-capability|git|https://github.com/NYU-LLM-CTF/LLM_CTF_Database|4c5744f55a31|MIT|oracle-flag|200 CTF (crypto/forensics/pwn/rev/web/misc)
+nyu_ctf_agents|ctf-capability|git|https://github.com/NYU-LLM-CTF/nyuctf_agents|6bb4d2b437c0|MIT|oracle-flag|NYU CTF agent harness + challenge metadata
+intercode|ctf-capability|git|https://github.com/princeton-nlp/intercode|c3e46d827cfc|MIT|oracle-flag|InterCode bash/sql/python/ctf multi-turn
+agentbench|os-capability|git|https://github.com/THUDM/AgentBench|d1e4a10db08c|Apache-2.0|oracle-output|8 envs; OS subset (file/proc/user/perm)
+cve_bench|web-exploit|git|https://github.com/uiuc-kang-lab/cve-bench|4ed2d80ba575|MIT|oracle-exploit|real-world web CVE exploitation (ICML25 spotlight)
+cybergym|vuln-repro|git|https://github.com/sunblaze-ucb/cybergym|3ae906788dfd|Apache-2.0|oracle-repro|real-world vuln reproduction at scale (2025)
+purplellama|safety+secure-coding|git|https://github.com/meta-llama/PurpleLlama|38ccb4a9b813|MIT|classifier|CyberSecEval 1/2/3 + Llama Guard prompts
+harmbench|safety-refusal|git|https://github.com/centerforaisafety/HarmBench|8e1604d1171f|MIT|classifier|400+ red-team prompts; cyber subset ~100
+inspect_evals|meta-harness|git|https://github.com/UKGovernmentBEIS/inspect_evals|46254f5d53ad|MIT|mixed|UK-AISI; bundles cybench/cyberseceval/sevenllm/secqa/gdm
+inspect_cyber|cyber-range|git|https://github.com/UKGovernmentBEIS/inspect_cyber|89b95e05a096|MIT|oracle-solvability|UK-AISI cyber range CTF->AD->enterprise->CNI
+caibench|meta-benchmark|git|https://github.com/aliasrobotics/cai|87cc46f46fd2|see-repo|mixed|CAIBench 5 cats 10k+ (jeopardy/A&D/range/knowledge/privacy)
+seceval|knowledge|git|https://github.com/XuanwuAI/SecEval|7aef3176a1a0|CC-BY-NC|mcq|security knowledge eval (2204 Q, 9 domains)
+wmdp|knowledge|git|https://github.com/centerforaisafety/wmdp|c0b6c12bb0de|MIT|mcq|WMDP code (cyber/bio/chem hazardous-knowledge proxy)
+threecb|catastrophic-capability|git|https://github.com/apartresearch/3cb|d87effdeacee|see-repo|oracle|Catastrophic Cyber Capabilities Benchmark
+cybermetric|knowledge|git|https://github.com/cybermetric/CyberMetric|2f5818bd2c19|MIT|mcq|CyberMetric 80/500/2000/10000 QA
+cti_bench|cti-knowledge|hf|AI4Sec/cti-bench|9237e1636ee3|see-card|mixed|Cyber Threat Intelligence benchmark
+secqa|knowledge|hf|zefang-liu/secqa|d00a07484283|see-card|mcq|Security QA (v1/v2)
+wmdp_data|knowledge|hf|cais/wmdp|7125571f22f0|MIT|mcq|WMDP datasets wmdp-cyber/bio/chem

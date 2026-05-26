@@ -1,0 +1,8 @@
+# actual benchmark data is NOT committed (too large + upstream licenses).
+# it is fetched on demand into $BENCH_DATA (default /home/opsclaw/bench_data)
+# and exposed via the ./data symlink. reproduce with:  make fetch
+/data
+data/
+*.pyc
+__pycache__/
+.venv/
