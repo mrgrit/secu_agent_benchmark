@@ -1,0 +1,502 @@
+{
+  "probed_at": "2026-05-26T22:29:10.072195Z",
+  "infra": "6v6@192.168.0.103",
+  "containers": [
+    "6v6-adminconsole",
+    "6v6-aicompanion",
+    "6v6-attacker",
+    "6v6-bastion",
+    "6v6-dvwa",
+    "6v6-fw",
+    "6v6-govportal",
+    "6v6-ips",
+    "6v6-juiceshop",
+    "6v6-mediforum",
+    "6v6-neobank",
+    "6v6-siem",
+    "6v6-wazuh-indexer",
+    "6v6-web"
+  ],
+  "capabilities": {
+    "cap:network-recon": {
+      "present": true,
+      "from": [
+        "nmap"
+      ],
+      "evidence": "nmap@6v6-attacker"
+    },
+    "cap:web-scan": {
+      "present": true,
+      "from": [
+        "sqlmap",
+        "nikto",
+        "gobuster",
+        "ffuf",
+        "dirb",
+        "nuclei",
+        "whatweb"
+      ],
+      "evidence": "sqlmap@6v6-attacker, nikto@6v6-attacker, gobuster@6v6-attacker"
+    },
+    "cap:password-attack": {
+      "present": true,
+      "from": [
+        "hydra",
+        "john",
+        "hashcat"
+      ],
+      "evidence": "hydra@6v6-attacker, john@6v6-attacker, hashcat@6v6-attacker"
+    },
+    "cap:exploit-fw": {
+      "present": true,
+      "from": [
+        "msfconsole",
+        "searchsploit"
+      ],
+      "evidence": "msfconsole@6v6-attacker, searchsploit@6v6-attacker"
+    },
+    "cap:pcap-analysis": {
+      "present": true,
+      "from": [
+        "tcpdump"
+      ],
+      "evidence": "tcpdump@6v6-attacker,6v6-ips,6v6-fw"
+    },
+    "cap:memory-forensics": {
+      "present": false,
+      "from": [],
+      "evidence": "none of ['volatility', 'vol.py', 'vol', 'winpmem', 'avml'] found in ['6v6-attacker', '6v6-siem', '6v6-ips', '6v6-web', '6v6-bastion', '6v6-fw']"
+    },
+    "cap:disk-forensics": {
+      "present": false,
+      "from": [],
+      "evidence": "none of ['binwalk', 'foremost', 'fls'] found in ['6v6-attacker', '6v6-siem', '6v6-ips', '6v6-web', '6v6-bastion', '6v6-fw']"
+    },
+    "cap:reversing": {
+      "present": true,
+      "from": [
+        "objdump"
+      ],
+      "evidence": "objdump@6v6-attacker,6v6-web,6v6-bastion"
+    },
+    "cap:crypto": {
+      "present": true,
+      "from": [
+        "openssl"
+      ],
+      "evidence": "openssl@6v6-attacker,6v6-siem,6v6-ips,6v6-web,6v6-bastion,6v6-fw"
+    },
+    "cap:smb-ad": {
+      "present": false,
+      "from": [],
+      "evidence": "none of ['smbclient', 'enum4linux', 'ldapsearch', 'kerbrute', 'responder', 'crackmapexec'] found in ['6v6-attacker', '6v6-siem', '6v6-ips', '6v6-web', '6v6-bastion', '6v6-fw']"
+    },
+    "cap:wireless": {
+      "present": false,
+      "from": [],
+      "evidence": "none of ['aircrack-ng'] found in ['6v6-attacker', '6v6-siem', '6v6-ips', '6v6-web', '6v6-bastion', '6v6-fw']"
+    },
+    "cap:mobile": {
+      "present": false,
+      "from": [],
+      "evidence": "none of ['frida', 'adb', 'apktool'] found in ['6v6-attacker', '6v6-siem', '6v6-ips', '6v6-web', '6v6-bastion', '6v6-fw']"
+    },
+    "cap:cloud": {
+      "present": false,
+      "from": [],
+      "evidence": "none of ['aws', 'gcloud', 'az', 'kubectl', 'helm', 'terraform'] found in ['6v6-attacker', '6v6-siem', '6v6-ips', '6v6-web', '6v6-bastion', '6v6-fw']"
+    },
+    "service:modsecurity": {
+      "present": true,
+      "evidence": "3 SecRuleEngine DetectionOnly\n      3 SecRuleEngine On"
+    },
+    "service:wazuh": {
+      "present": true,
+      "evidence": "wazuh-clusterd not running...\nwazuh-modulesd is running...\nwazuh-monitord is running...\n/var/ossec/logs/alerts/alerts.json"
+    },
+    "service:suricata": {
+      "present": true,
+      "evidence": "/usr/bin/suricata\n-rw-r--r-- 1 root root 279486250 May 26 22:29 /var/log/suricata/eve.json"
+    },
+    "service:nftables": {
+      "present": true,
+      "evidence": "/usr/sbin/nft\ntable ip nat\ntable ip nat6v6"
+    },
+    "target:juice-shop": {
+      "present": true,
+      "evidence": "6v6-juiceshop in docker ps"
+    },
+    "target:dvwa": {
+      "present": true,
+      "evidence": "6v6-dvwa in docker ps"
+    },
+    "target:neobank": {
+      "present": true,
+      "evidence": "6v6-neobank in docker ps"
+    },
+    "target:govportal": {
+      "present": true,
+      "evidence": "6v6-govportal in docker ps"
+    },
+    "target:mediforum": {
+      "present": true,
+      "evidence": "6v6-mediforum in docker ps"
+    },
+    "target:adminconsole": {
+      "present": true,
+      "evidence": "6v6-adminconsole in docker ps"
+    },
+    "target:aicompanion": {
+      "present": true,
+      "evidence": "6v6-aicompanion in docker ps"
+    }
+  },
+  "tools": {
+    "nmap": {
+      "present": true,
+      "where": {
+        "6v6-attacker": "/usr/bin/nmap"
+      }
+    },
+    "masscan": {
+      "present": false,
+      "where": {}
+    },
+    "sqlmap": {
+      "present": true,
+      "where": {
+        "6v6-attacker": "/usr/bin/sqlmap"
+      }
+    },
+    "nikto": {
+      "present": true,
+      "where": {
+        "6v6-attacker": "/usr/bin/nikto"
+      }
+    },
+    "gobuster": {
+      "present": true,
+      "where": {
+        "6v6-attacker": "/usr/bin/gobuster"
+      }
+    },
+    "ffuf": {
+      "present": true,
+      "where": {
+        "6v6-attacker": "/usr/local/bin/ffuf"
+      }
+    },
+    "wfuzz": {
+      "present": false,
+      "where": {}
+    },
+    "dirb": {
+      "present": true,
+      "where": {
+        "6v6-attacker": "/usr/bin/dirb"
+      }
+    },
+    "whatweb": {
+      "present": true,
+      "where": {
+        "6v6-attacker": "/usr/bin/whatweb"
+      }
+    },
+    "wpscan": {
+      "present": false,
+      "where": {}
+    },
+    "nuclei": {
+      "present": true,
+      "where": {
+        "6v6-attacker": "/usr/local/bin/nuclei"
+      }
+    },
+    "msfconsole": {
+      "present": true,
+      "where": {
+        "6v6-attacker": "/usr/local/bin/msfconsole"
+      }
+    },
+    "searchsploit": {
+      "present": true,
+      "where": {
+        "6v6-attacker": "/usr/local/bin/searchsploit"
+      }
+    },
+    "hydra": {
+      "present": true,
+      "where": {
+        "6v6-attacker": "/usr/bin/hydra"
+      }
+    },
+    "john": {
+      "present": true,
+      "where": {
+        "6v6-attacker": "/usr/sbin/john"
+      }
+    },
+    "hashcat": {
+      "present": true,
+      "where": {
+        "6v6-attacker": "/usr/bin/hashcat"
+      }
+    },
+    "medusa": {
+      "present": false,
+      "where": {}
+    },
+    "crackmapexec": {
+      "present": false,
+      "where": {}
+    },
+    "tcpdump": {
+      "present": true,
+      "where": {
+        "6v6-attacker": "/usr/bin/tcpdump",
+        "6v6-ips": "/usr/bin/tcpdump",
+        "6v6-fw": "/usr/bin/tcpdump"
+      }
+    },
+    "tshark": {
+      "present": false,
+      "where": {}
+    },
+    "nc": {
+      "present": true,
+      "where": {
+        "6v6-attacker": "/usr/bin/nc"
+      }
+    },
+    "ncat": {
+      "present": true,
+      "where": {
+        "6v6-attacker": "/usr/bin/ncat"
+      }
+    },
+    "socat": {
+      "present": true,
+      "where": {
+        "6v6-attacker": "/usr/bin/socat"
+      }
+    },
+    "curl": {
+      "present": true,
+      "where": {
+        "6v6-attacker": "/usr/bin/curl",
+        "6v6-siem": "/usr/bin/curl",
+        "6v6-ips": "/usr/bin/curl",
+        "6v6-web": "/usr/bin/curl",
+        "6v6-bastion": "/usr/bin/curl",
+        "6v6-fw": "/usr/bin/curl"
+      }
+    },
+    "wget": {
+      "present": true,
+      "where": {
+        "6v6-attacker": "/usr/bin/wget",
+        "6v6-ips": "/usr/bin/wget",
+        "6v6-web": "/usr/bin/wget",
+        "6v6-bastion": "/usr/bin/wget",
+        "6v6-fw": "/usr/bin/wget"
+      }
+    },
+    "volatility": {
+      "present": false,
+      "where": {}
+    },
+    "vol.py": {
+      "present": false,
+      "where": {}
+    },
+    "vol": {
+      "present": false,
+      "where": {}
+    },
+    "winpmem": {
+      "present": false,
+      "where": {}
+    },
+    "avml": {
+      "present": false,
+      "where": {}
+    },
+    "insmod": {
+      "present": false,
+      "where": {}
+    },
+    "binwalk": {
+      "present": false,
+      "where": {}
+    },
+    "foremost": {
+      "present": false,
+      "where": {}
+    },
+    "fls": {
+      "present": false,
+      "where": {}
+    },
+    "strings": {
+      "present": true,
+      "where": {
+        "6v6-attacker": "/usr/bin/strings",
+        "6v6-web": "/usr/bin/strings",
+        "6v6-bastion": "/usr/bin/strings"
+      }
+    },
+    "file": {
+      "present": false,
+      "where": {}
+    },
+    "radare2": {
+      "present": false,
+      "where": {}
+    },
+    "r2": {
+      "present": false,
+      "where": {}
+    },
+    "gdb": {
+      "present": false,
+      "where": {}
+    },
+    "objdump": {
+      "present": true,
+      "where": {
+        "6v6-attacker": "/usr/bin/objdump",
+        "6v6-web": "/usr/bin/objdump",
+        "6v6-bastion": "/usr/bin/objdump"
+      }
+    },
+    "readelf": {
+      "present": true,
+      "where": {
+        "6v6-attacker": "/usr/bin/readelf",
+        "6v6-web": "/usr/bin/readelf",
+        "6v6-bastion": "/usr/bin/readelf"
+      }
+    },
+    "ghidra": {
+      "present": false,
+      "where": {}
+    },
+    "openssl": {
+      "present": true,
+      "where": {
+        "6v6-attacker": "/usr/bin/openssl",
+        "6v6-siem": "/usr/bin/openssl",
+        "6v6-ips": "/usr/bin/openssl",
+        "6v6-web": "/usr/bin/openssl",
+        "6v6-bastion": "/usr/bin/openssl",
+        "6v6-fw": "/usr/bin/openssl"
+      }
+    },
+    "dig": {
+      "present": true,
+      "where": {
+        "6v6-attacker": "/usr/bin/dig",
+        "6v6-bastion": "/usr/bin/dig"
+      }
+    },
+    "nslookup": {
+      "present": true,
+      "where": {
+        "6v6-attacker": "/usr/bin/nslookup",
+        "6v6-bastion": "/usr/bin/nslookup"
+      }
+    },
+    "dnsrecon": {
+      "present": false,
+      "where": {}
+    },
+    "smbclient": {
+      "present": false,
+      "where": {}
+    },
+    "enum4linux": {
+      "present": false,
+      "where": {}
+    },
+    "ldapsearch": {
+      "present": false,
+      "where": {}
+    },
+    "kerbrute": {
+      "present": false,
+      "where": {}
+    },
+    "responder": {
+      "present": false,
+      "where": {}
+    },
+    "aircrack-ng": {
+      "present": false,
+      "where": {}
+    },
+    "frida": {
+      "present": false,
+      "where": {}
+    },
+    "adb": {
+      "present": false,
+      "where": {}
+    },
+    "apktool": {
+      "present": false,
+      "where": {}
+    },
+    "aws": {
+      "present": false,
+      "where": {}
+    },
+    "gcloud": {
+      "present": false,
+      "where": {}
+    },
+    "az": {
+      "present": false,
+      "where": {}
+    },
+    "kubectl": {
+      "present": false,
+      "where": {}
+    },
+    "helm": {
+      "present": false,
+      "where": {}
+    },
+    "terraform": {
+      "present": false,
+      "where": {}
+    },
+    "suricata": {
+      "present": true,
+      "where": {
+        "6v6-ips": "/usr/bin/suricata"
+      }
+    },
+    "jq": {
+      "present": true,
+      "where": {
+        "6v6-attacker": "/usr/bin/jq",
+        "6v6-siem": "/usr/bin/jq",
+        "6v6-ips": "/usr/bin/jq",
+        "6v6-web": "/usr/bin/jq",
+        "6v6-bastion": "/usr/bin/jq",
+        "6v6-fw": "/usr/bin/jq"
+      }
+    },
+    "python3": {
+      "present": true,
+      "where": {
+        "6v6-attacker": "/usr/bin/python3",
+        "6v6-siem": "/usr/bin/python3",
+        "6v6-ips": "/usr/bin/python3",
+        "6v6-web": "/usr/bin/python3",
+        "6v6-bastion": "/usr/bin/python3",
+        "6v6-fw": "/usr/bin/python3"
+      }
+    }
+  }
+}
