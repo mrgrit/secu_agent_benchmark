@@ -36,6 +36,9 @@ fetch_git(){ # id url sha
   log "GIT  $id <- $url"
   if GIT_LFS_SKIP_SMUDGE=1 git clone --depth 1 --quiet "$url" "$dest" 2>>"$LOG"; then
     command -v git-lfs >/dev/null 2>&1 && ( cd "$dest" && git lfs pull >>"$LOG" 2>&1 ) || true
+    # best-effort: pull submodules (real data lives in some, e.g. purplellama/CyberSOCEval_data).
+    # may fail if upstream rebased away the pinned commit (e.g. caibench) — non-fatal, logged.
+    [ -f "$dest/.gitmodules" ] && ( cd "$dest" && git submodule update --init --recursive --depth 1 >>"$LOG" 2>&1 ) || true
     local rsha; rsha=$(git -C "$dest" rev-parse --short HEAD 2>/dev/null || echo "?")
     local note="git"; [ -n "$sha" ] && [ "${sha#$rsha}" = "$sha" ] && note="git (upstream moved; want $sha got $rsha)"
     touch "$dest/.fetch_done"

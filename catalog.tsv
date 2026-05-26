@@ -21,3 +21,4 @@ cybermetric|knowledge|git|https://github.com/cybermetric/CyberMetric|2f5818bd2c1
 cti_bench|cti-knowledge|hf|AI4Sec/cti-bench|9237e1636ee3|see-card|mixed|Cyber Threat Intelligence benchmark
 secqa|knowledge|hf|zefang-liu/secqa|d00a07484283|see-card|mcq|Security QA (v1/v2)
 wmdp_data|knowledge|hf|cais/wmdp|7125571f22f0|MIT|mcq|WMDP datasets wmdp-cyber/bio/chem
+cybergym_data|vuln-repro|hf|sunblaze-ucb/cybergym|main|Apache-2.0|oracle-repro|CyberGym FULL corpus ~240GB (real vuln repro env); cybergym repo above is framework-only
