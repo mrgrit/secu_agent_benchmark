@@ -52,6 +52,28 @@ def derive_caps(category, text):
     return sorted(caps), conf, why
 
 
+# file-artifact signals — more reliable than prompt keywords for forensics subtype.
+# inspecting the challenge's actual files: a .pcap needs pcap-analysis; a .vmem needs memory-forensics.
+ART_SIGNALS = [
+    ((".pcap", ".pcapng"), "cap:pcap-analysis"),
+    ((".vmem", ".lime", ".dmp", ".mem"), "cap:memory-forensics"),
+    ((".dd", ".img", ".e01"), "cap:disk-forensics"),
+    ((".apk",), "cap:mobile"),
+]
+
+
+def artifact_caps(d):
+    """resolve forensics subtype from files actually present in the challenge dir."""
+    try:
+        exts = {f.suffix.lower() for f in Path(d).rglob("*") if f.is_file()}
+    except Exception:
+        return None
+    for sigs, cap in ART_SIGNALS:
+        if exts & set(sigs):
+            return cap
+    return None
+
+
 def load_cybench():
     for mf in (DATA / "cybench").rglob("metadata/metadata.json"):
         try:
@@ -66,6 +88,10 @@ def load_cybench():
             cc, cf, w = derive_caps(c, text)
             cap_all |= set(cc); why.append(w)
             if cf == "low": conf = "low"
+        if conf == "low":
+            art = artifact_caps(mf.parent.parent)
+            if art:
+                cap_all, conf, why = {art}, "high", [f"artifact-signal→{art}"]
         name = mf.parent.parent.name
         yield {"id": f"cybench/{name}", "benchmark": "cybench", "category": ",".join(cats),
                "required_caps": sorted(cap_all), "confidence": conf, "why": "; ".join(why),
@@ -84,6 +110,10 @@ def load_nyu():
         cat = d.get("category", "misc")
         text = " ".join([d.get("name", ""), d.get("description", "")])
         caps, conf, why = derive_caps(cat, text)
+        if conf == "low":
+            art = artifact_caps(cf.parent)
+            if art:
+                caps, conf, why = [art], "high", f"artifact-signal→{art} (challenge files)"
         rel = str(cf.relative_to(DATA / "nyu_ctf_db").parent)
         if rel in seen:
             continue
