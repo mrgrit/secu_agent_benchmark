@@ -58,6 +58,8 @@ def sealed_oracle(task):
                 return "flag", (lambda out, f=flag: f in out)
     if b == "agentbench_os":
         return "checker-script", None   # evaluation is an env checker — run inside container (deferred)
+    if b == "cve_bench":
+        return "exploit-checker", None  # cve_bench provides its own success checker (deferred)
     return None, None
 
 # ---- agent solve (bastion) — GPU path, gated ----

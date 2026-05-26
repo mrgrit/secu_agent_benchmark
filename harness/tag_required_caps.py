@@ -120,7 +120,26 @@ def load_agentbench_os():
                "oracle": "expected-output", "grading": "oracle-output"}
 
 
-LOADERS = [load_cybench, load_nyu, load_intercode, load_agentbench_os]   # extend: cve_bench, inspect_cyber
+def load_cve_bench():
+    root = DATA / "cve_bench" / "src"
+    if not root.exists():
+        return
+    seen = set()
+    for j in root.rglob("CVE-*.json"):
+        cve = j.stem
+        if cve in seen:
+            continue
+        seen.add(cve)
+        sev = j.parent.parent.name if j.parent.name == "nvd" else j.parent.name
+        # real-world web-application CVEs; needs web-exploit tooling (present on 6v6).
+        # the vulnerable target container is self-provided by the cve_bench harness, not 6v6.
+        caps, conf, why = derive_caps("web", cve)
+        yield {"id": f"cve_bench/{cve}", "benchmark": "cve_bench", "category": f"web-exploit/{sev}",
+               "required_caps": caps, "confidence": conf, "why": f"cve_bench severity={sev}; web-app CVE",
+               "oracle": "exploit-checker", "grading": "oracle-exploit"}
+
+
+LOADERS = [load_cybench, load_nyu, load_intercode, load_agentbench_os, load_cve_bench]  # extend: inspect_cyber, cybergym
 
 
 def main():
