@@ -12,11 +12,16 @@ No LLM. Deterministic set intersection over the probed inventory.
 
     python3 harness/select_inscope.py
 """
-import json
+import argparse, json
 from pathlib import Path
 
+ap = argparse.ArgumentParser()
+ap.add_argument("--inv", default="capability_inventory.json", help="capability inventory to select against")
+ap.add_argument("--suffix", default="", help="suffix for output files, e.g. '.0105' → inscope.0105.jsonl")
+args = ap.parse_args()
+
 H = Path(__file__).parent
-inv = json.loads((H / "capability_inventory.json").read_text())
+inv = json.loads((H / args.inv).read_text())
 caps = inv["capabilities"]
 present = {k for k, v in caps.items() if v.get("present")}
 
@@ -47,9 +52,9 @@ def dump(name, rows):
     (H / name).write_text("\n".join(json.dumps(r, ensure_ascii=False) for r in rows) + ("\n" if rows else ""))
 
 
-dump("inscope.jsonl", inscope)
-dump("dropped.jsonl", dropped)
-dump("review_queue.jsonl", review)
+dump(f"inscope{args.suffix}.jsonl", inscope)
+dump(f"dropped{args.suffix}.jsonl", dropped)
+dump(f"review_queue{args.suffix}.jsonl", review)
 
 from collections import Counter
 print(f"=== infra-fit selection ({inv['infra']}, probed {inv['probed_at']}) ===")
