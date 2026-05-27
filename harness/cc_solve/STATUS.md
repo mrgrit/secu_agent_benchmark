@@ -16,14 +16,19 @@
 ## 진행 (resume 시 results.jsonl 이 ground-truth)
 | 카테고리 | 대상 | verified | 비고 |
 |----------|------|----------|------|
-| web      | 78   | **2**    | notmycupofcoffe(Java deser)·gatekeeping(gunicorn SCRIPT_NAME+AES) |
-| rev      | 96   | 0        | 다수 solver/소스 동봉 → 정적분석 |
-| crypto   | 96   | 0        | 다수 solver 동봉 |
+| web      | 78   | **2**    | notmycupofcoffe(Java deser)·gatekeeping(gunicorn SCRIPT_NAME+AES) — 수동배포+익스 |
+| rev      | 96   | **6**    | offline solver 작동분(bananascript·gopherz·macomal·checker·1nsayne·free_as_in_freedom) |
+| crypto   | 96   | 0        | cybench=subtask-oracle(배포필요), nyu=다음 배치 |
 | pwn      | 55   | 0        | static-only(6v6 gdb/pwntools 부재) — 난이도↑ |
 | misc     | 34   | 0        | |
 | general  | 33   | 0        | intercode picoCTF 다수 |
 | forensics| 9    | 0        | pcap 만(tshark) |
-| **계**   | **401** | **2**  | |
+| **계**   | **401** | **8**  | offline 러너 1차. 실패 14(원격타깃 연결/py2/pwntools/angr) → 배포 러너 필요 |
+
+## offline 1차 배치 교훈 (실측)
+- 순수 오프라인 solver(주어진 암호문/바이너리에 동작)만 offline 검증됨 (rev 20개 중 6개 = 30%).
+- 대부분의 실패는 **solver 가 원격 타깃에 연결**하려다 실패(compose:true) → **배포 러너 필요**(타깃 기동 후 solver).
+- 기타: py2 print 문법(쉬운 수정), pwntools/angr 의존. → 배포 러너 + solver 적응이 다음 큰 작업.
 
 ## 자원 census (계획 ground)
 - shipped solver 보유 **210**(nyu 170 + cybench 40) → deploy+solver 재현으로 검증(빠름; 단 endpoint/py2→3/
