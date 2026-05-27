@@ -1,0 +1,404 @@
+id	benchmark	category	tooling	oracle_kind	status
+cybench/eval-me	cybench	forensics	ok(pcap)	subtask-answers	adapted
+cybench/chunky	cybench	web	ok	subtask-answers	adapted
+cybench/frog-waf	cybench	web	ok	subtask-answers	adapted
+cybench/guardians-of-the-kernel	cybench	rev	ok (정적)	subtask-answers	adapted
+cybench/just-another-pickle-jail	cybench	misc	ok	subtask-answers	adapted
+cybench/randsubware	cybench	crypto	ok	subtask-answers	adapted
+cybench/noisy-crc	cybench	crypto	ok	subtask-answers	adapted
+cybench/noisier-crc	cybench	crypto	ok	subtask-answers	adapted
+cybench/algorithm-multitool	cybench	pwn	tooling-limited	subtask-answers	needs-review
+cybench/network-tools	cybench	pwn	tooling-limited	subtask-answers	needs-review
+cybench/text-sender	cybench	pwn	tooling-limited	subtask-answers	needs-review
+cybench/matrix-lab-2	cybench	rev	ok (정적)	subtask-answers	adapted
+cybench/diffecient	cybench	crypto	ok	subtask-answers	adapted
+cybench/failproof	cybench	crypto	ok	subtask-answers	adapted
+cybench/robust-cbc	cybench	crypto	ok	subtask-answers	adapted
+cybench/ezmaze	cybench	crypto	ok	subtask-answers	adapted
+cybench/22-back-to-the-past	cybench	web	ok	subtask-answers	adapted
+cybench/05-motp	cybench	web	ok	subtask-answers	adapted
+cybench/21-elgamal	cybench	crypto	ok	subtask-answers	adapted
+cybench/[Medium] Data Siege	cybench	forensics	ok(pcap)	subtask-answers	adapted
+cybench/[Medium] LockTalk	cybench	web	ok	subtask-answers	adapted
+cybench/[Very Easy] Flag Command	cybench	web	ok	subtask-answers	adapted
+cybench/[Easy] Labyrinth Linguist	cybench	web	ok	subtask-answers	adapted
+cybench/[Easy] Unbreakable	cybench	misc	ok	subtask-answers	adapted
+cybench/[Medium] Were Pickle Phreaks Revenge	cybench	misc	ok	subtask-answers	adapted
+cybench/[Hard] Path of Survival	cybench	crypto	ok	subtask-answers	adapted
+cybench/[Very Easy] Stop Drop and Roll	cybench	misc	ok	subtask-answers	adapted
+cybench/[Very Easy] Character	cybench	misc	ok	subtask-answers	adapted
+cybench/[Hard] Permuted	cybench	crypto	ok	subtask-answers	adapted
+cybench/[Very Easy] Dynastic	cybench	crypto	ok	subtask-answers	adapted
+cybench/[Very Easy] Primary Knowledge	cybench	crypto	ok	subtask-answers	adapted
+cybench/[Very Easy] Makeshift	cybench	crypto	ok	subtask-answers	adapted
+cybench/[Medium] Partial Tenacity	cybench	crypto	ok	subtask-answers	adapted
+cybench/[Very Easy] Delulu	cybench	pwn	tooling-limited	subtask-answers	needs-review
+cybench/[Very Easy] PackedAway	cybench	rev	ok (정적)	subtask-answers	adapted
+cybench/[Medium] QuickScan	cybench	rev	ok (정적)	subtask-answers	adapted
+cybench/[Very Easy] BoxCutter	cybench	rev	ok (정적)	subtask-answers	adapted
+cybench/[Very Easy] LootStash	cybench	rev	ok (정적)	subtask-answers	adapted
+cybench/[Hard] FlecksOfGold	cybench	rev	ok (정적)	subtask-answers	adapted
+cybench/[Easy] Crushing	cybench	rev	ok (정적)	subtask-answers	adapted
+cybench/Maze [Very Easy]	cybench	misc	ok	subtask-answers	adapted
+nyu_ctf/test/2017/CSAW-Finals/crypto/ECXOR	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2017/CSAW-Finals/crypto/Lupin	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2017/CSAW-Finals/pwn/Humm_sCh-t	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2017/CSAW-Finals/rev/rabbithole	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2017/CSAW-Finals/rev/rusty_road	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2017/CSAW-Finals/rev/48-bit_yeet_lab	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2017/CSAW-Quals/forensics/missed_registration	nyu_ctf	forensics	ok(pcap)	flag	adapted
+nyu_ctf/test/2017/CSAW-Quals/web/notmycupofcoffe	nyu_ctf	web	ok	flag	adapted
+nyu_ctf/test/2017/CSAW-Quals/web/littlequery	nyu_ctf	web	ok	flag	adapted
+nyu_ctf/test/2017/CSAW-Quals/web/orange	nyu_ctf	web	ok	flag	adapted
+nyu_ctf/test/2017/CSAW-Quals/web/orangev2	nyu_ctf	web	ok	flag	adapted
+nyu_ctf/test/2017/CSAW-Quals/misc/serial	nyu_ctf	misc	ok	flag	adapted
+nyu_ctf/test/2017/CSAW-Quals/misc/cvv	nyu_ctf	misc	ok	flag	adapted
+nyu_ctf/test/2017/CSAW-Quals/crypto/baby_crypt	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2017/CSAW-Quals/crypto/another_xor	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2017/CSAW-Quals/crypto/almost_xor	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2017/CSAW-Quals/pwn/pilot	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2017/CSAW-Quals/pwn/zone	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2017/CSAW-Quals/rev/tablez	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2017/CSAW-Quals/rev/grumpcheck	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2017/CSAW-Quals/rev/bananascript	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2017/CSAW-Quals/rev/prophecy	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2017/CSAW-Quals/rev/realism	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2017/CSAW-Quals/rev/gopherz	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2021/CSAW-Finals/forensics/constela	nyu_ctf	forensics	ok(pcap)	flag	adapted
+nyu_ctf/test/2021/CSAW-Finals/misc/terminal-velocity	nyu_ctf	misc	ok	flag	adapted
+nyu_ctf/test/2021/CSAW-Finals/crypto/Interoperable	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2021/CSAW-Finals/crypto/iBad	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2021/CSAW-Finals/crypto/Collision-Course	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2021/CSAW-Finals/pwn/chatterbox	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2021/CSAW-Finals/pwn/horrorscope	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2021/CSAW-Finals/rev/maze	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2021/CSAW-Finals/rev/sfc	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2021/CSAW-Quals/forensics/Lazy-Leaks	nyu_ctf	forensics	ok(pcap)	flag	adapted
+nyu_ctf/test/2021/CSAW-Quals/web/gatekeeping	nyu_ctf	web	ok	flag	adapted
+nyu_ctf/test/2021/CSAW-Quals/web/poem-collection	nyu_ctf	web	ok	flag	adapted
+nyu_ctf/test/2021/CSAW-Quals/web/securinotes	nyu_ctf	web	ok	flag	adapted
+nyu_ctf/test/2021/CSAW-Quals/web/scp-terminal	nyu_ctf	web	ok	flag	adapted
+nyu_ctf/test/2021/CSAW-Quals/web/no-pass-needed	nyu_ctf	web	ok	flag	adapted
+nyu_ctf/test/2021/CSAW-Quals/misc/Save-the-Tristate	nyu_ctf	misc	ok	flag	adapted
+nyu_ctf/test/2021/CSAW-Quals/misc/Weak-Password	nyu_ctf	misc	ok	flag	adapted
+nyu_ctf/test/2021/CSAW-Quals/crypto/Crack-Me	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2021/CSAW-Quals/crypto/ECC-Pop-Quiz	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2021/CSAW-Quals/crypto/Gotta-Decrypt-Them-All	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2021/CSAW-Quals/crypto/RSA-Pop-Quiz	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2021/CSAW-Quals/crypto/Forgery	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2021/CSAW-Quals/crypto/Bits	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2021/CSAW-Quals/pwn/alien-math	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2021/CSAW-Quals/pwn/krypto	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2021/CSAW-Quals/pwn/haystack	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2021/CSAW-Quals/pwn/Password-Checker	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2021/CSAW-Quals/rev/ncore	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2021/CSAW-Quals/rev/macomal	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2021/CSAW-Quals/rev/checker	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2021/CSAW-Quals/rev/ransomware	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2020/CSAW-Finals/web/picgram	nyu_ctf	web	ok	flag	adapted
+nyu_ctf/test/2020/CSAW-Finals/web/snailrace1	nyu_ctf	web	ok	flag	adapted
+nyu_ctf/test/2020/CSAW-Finals/web/sharkfacts	nyu_ctf	web	ok	flag	adapted
+nyu_ctf/test/2020/CSAW-Finals/crypto/eccentric	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2020/CSAW-Finals/crypto/hybrid2	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2020/CSAW-Finals/crypto/jackpot	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2020/CSAW-Finals/crypto/the_matrix	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2020/CSAW-Finals/pwn/darkunion1	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2020/CSAW-Finals/rev/sourcery	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2020/CSAW-Finals/rev/brrr	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2020/CSAW-Finals/rev/yeet	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2020/CSAW-Finals/rev/rap	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2020/CSAW-Quals/crypto/adversarial	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2020/CSAW-Quals/crypto/smallsurp	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2020/CSAW-Quals/crypto/perfect_secrecy	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2020/CSAW-Quals/crypto/authy	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2020/CSAW-Quals/crypto/modus_operandi	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2020/CSAW-Quals/crypto/difib	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2020/CSAW-Quals/pwn/roppity	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2020/CSAW-Quals/pwn/thebardsfail	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2020/CSAW-Quals/pwn/blox2	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2020/CSAW-Quals/pwn/grid	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2020/CSAW-Quals/pwn/slithery	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2020/CSAW-Quals/pwn/feather	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2020/CSAW-Quals/pwn/pwnvoltex	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2020/CSAW-Quals/rev/baby_mult	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2020/CSAW-Quals/rev/ezbreezy	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2020/CSAW-Quals/rev/not_malware	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2018/CSAW-Finals/misc/showdown	nyu_ctf	misc	ok	flag	adapted
+nyu_ctf/test/2018/CSAW-Finals/misc/leaked_flag	nyu_ctf	misc	ok	flag	adapted
+nyu_ctf/test/2018/CSAW-Finals/crypto/lost_mind	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2018/CSAW-Finals/crypto/distastrous_security_apparatus	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2018/CSAW-Finals/crypto/asr4cr	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2018/CSAW-Finals/pwn/ES1337	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2018/CSAW-Finals/rev/1nsayne	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2018/CSAW-Finals/rev/free_as_in_freedom	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2018/CSAW-Finals/rev/bdos	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2018/CSAW-Quals/misc/algebra	nyu_ctf	misc	ok	flag	adapted
+nyu_ctf/test/2018/CSAW-Quals/misc/Short-Circuit	nyu_ctf	misc	ok	flag	adapted
+nyu_ctf/test/2018/CSAW-Quals/misc/bin_t	nyu_ctf	misc	ok	flag	adapted
+nyu_ctf/test/2018/CSAW-Quals/crypto/babycrypto	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2018/CSAW-Quals/crypto/collusion	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2018/CSAW-Quals/crypto/lowe	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2018/CSAW-Quals/crypto/flatcrypt	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2018/CSAW-Quals/pwn/bigboy	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2018/CSAW-Quals/pwn/shellpointcode	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2018/CSAW-Quals/pwn/get_it?	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2018/CSAW-Quals/rev/A-Walk-Through-x86-Part-1	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2018/CSAW-Quals/rev/A-Walk-Through-x86-Part-2	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2018/CSAW-Quals/rev/kvm	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2023/CSAW-Finals/web/triathlon_or_sprint	nyu_ctf	web	ok	flag	adapted
+nyu_ctf/test/2023/CSAW-Finals/web/ShreeRamQuest	nyu_ctf	web	ok	flag	adapted
+nyu_ctf/test/2023/CSAW-Finals/misc/sigmaslogistics	nyu_ctf	misc	ok	flag	adapted
+nyu_ctf/test/2023/CSAW-Finals/misc/pyjail	nyu_ctf	misc	ok	flag	adapted
+nyu_ctf/test/2023/CSAW-Finals/misc/urkel	nyu_ctf	misc	ok	flag	adapted
+nyu_ctf/test/2023/CSAW-Finals/misc/vectors_machine	nyu_ctf	misc	ok	flag	adapted
+nyu_ctf/test/2023/CSAW-Finals/crypto/DescribeMe	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2023/CSAW-Finals/crypto/Textbook-RSA	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2023/CSAW-Finals/crypto/nervcenter	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2023/CSAW-Finals/pwn/brainflop	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2023/CSAW-Finals/pwn/Virtualization-pwn	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2023/CSAW-Finals/rev/Virtualization	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2023/CSAW-Finals/rev/unVirtualization	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2023/CSAW-Finals/rev/cell	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2023/CSAW-Quals/web/rainbow-notes	nyu_ctf	web	ok	flag	adapted
+nyu_ctf/test/2023/CSAW-Quals/web/philanthropy	nyu_ctf	web	ok	flag	adapted
+nyu_ctf/test/2023/CSAW-Quals/web/cookie-injection	nyu_ctf	web	ok	flag	adapted
+nyu_ctf/test/2023/CSAW-Quals/web/smug-dino	nyu_ctf	web	ok	flag	adapted
+nyu_ctf/test/2023/CSAW-Quals/misc/linear_aggressor	nyu_ctf	misc	ok	flag	adapted
+nyu_ctf/test/2023/CSAW-Quals/misc/TradingGame	nyu_ctf	misc	ok	flag	adapted
+nyu_ctf/test/2023/CSAW-Quals/crypto/circles	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2023/CSAW-Quals/crypto/mental-poker	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2023/CSAW-Quals/crypto/lottery	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2023/CSAW-Quals/pwn/puffin	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2023/CSAW-Quals/pwn/unlimited_subway	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2023/CSAW-Quals/pwn/target practice	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2023/CSAW-Quals/pwn/my_first_pwnie	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2023/CSAW-Quals/rev/rebug 1	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2023/CSAW-Quals/rev/baby's third	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2023/CSAW-Quals/rev/rox	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2023/CSAW-Quals/rev/baby's first	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2023/CSAW-Quals/rev/rebug 2	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2023/CSAW-Quals/rev/whataxor	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2019/CSAW-Finals/web/biometric	nyu_ctf	web	ok	flag	adapted
+nyu_ctf/test/2019/CSAW-Finals/misc/alive	nyu_ctf	misc	ok	flag	adapted
+nyu_ctf/test/2019/CSAW-Finals/crypto/macrypto	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2019/CSAW-Finals/pwn/arevenge	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2019/CSAW-Finals/rev/mystery_boi	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2019/CSAW-Finals/rev/wrangly	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2019/CSAW-Finals/rev/steady_counting	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2019/CSAW-Quals/crypto/DES2Bites	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2019/CSAW-Quals/crypto/brillouin	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2019/CSAW-Quals/crypto/byte_me	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2019/CSAW-Quals/crypto/super_curve	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2019/CSAW-Quals/crypto/count_on_me	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2019/CSAW-Quals/pwn/small_boi	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2019/CSAW-Quals/pwn/baby_boi	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2019/CSAW-Quals/pwn/traveller	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2019/CSAW-Quals/pwn/got_milk	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2019/CSAW-Quals/pwn/pop_goes_the_printer	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2019/CSAW-Quals/pwn/popping_caps_2	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2019/CSAW-Quals/pwn/popping_caps	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2019/CSAW-Quals/rev/halfpike	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2019/CSAW-Quals/rev/gibberish_check	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2019/CSAW-Quals/rev/call_site	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2019/CSAW-Quals/rev/wizkid	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2019/CSAW-Quals/rev/beleaf	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2022/CSAW-Finals/misc/eMbrEy0 LEaK	nyu_ctf	misc	ok	flag	adapted
+nyu_ctf/test/2022/CSAW-Finals/misc/SupEr GUeSsEr G@me	nyu_ctf	misc	ok	flag	adapted
+nyu_ctf/test/2022/CSAW-Finals/crypto/The Lengths we Extend Ourselves	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2022/CSAW-Finals/crypto/open-ELLIPTI-PH!	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2022/CSAW-Finals/crypto/polly-crack-this	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2022/CSAW-Finals/crypto/M@sTEr 0F PrN9	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2022/CSAW-Finals/pwn/Salt Server	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2022/CSAW-Finals/pwn/CryptoPwn	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2022/CSAW-Finals/rev/roulette	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2022/CSAW-Finals/rev/parallel vm	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2022/CSAW-Quals/misc/ezMaze	nyu_ctf	misc	ok	flag	adapted
+nyu_ctf/test/2022/CSAW-Quals/misc/CatTheFlag	nyu_ctf	misc	ok	flag	adapted
+nyu_ctf/test/2022/CSAW-Quals/misc/quantum-leap	nyu_ctf	misc	ok	flag	adapted
+nyu_ctf/test/2022/CSAW-Quals/crypto/gift-shop	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2022/CSAW-Quals/crypto/too-much-in-common	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2022/CSAW-Quals/crypto/Beyond-Quantum	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2022/CSAW-Quals/crypto/gotta-crack-them-all	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2022/CSAW-Quals/crypto/not-too-taxing	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/test/2022/CSAW-Quals/pwn/unsafe-linking	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2022/CSAW-Quals/pwn/ezROP	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2022/CSAW-Quals/rev/dockREleakage	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2022/CSAW-Quals/rev/the_big_bang	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2022/CSAW-Quals/rev/game	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/test/2022/CSAW-Quals/rev/AnyaGacha	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/development/2015/CSAW-Finals/pwn/hipster	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/development/2015/CSAW-Finals/rev/wyvern2	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/development/2015/CSAW-Quals/forensics/pcapin	nyu_ctf	forensics	ok(pcap)	flag	adapted
+nyu_ctf/development/2015/CSAW-Quals/web/throwback	nyu_ctf	web	ok	flag	adapted
+nyu_ctf/development/2015/CSAW-Quals/web/k_stairs	nyu_ctf	web	ok	flag	adapted
+nyu_ctf/development/2015/CSAW-Quals/crypto/eps_part2	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/development/2015/CSAW-Quals/crypto/bricks_of_gold	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/development/2015/CSAW-Quals/crypto/eps	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/development/2015/CSAW-Quals/pwn/meme-shop	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/development/2015/CSAW-Quals/rev/ftp	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/development/2015/CSAW-Quals/rev/wyvern	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/development/2014/CSAW-Finals/web/webroot	nyu_ctf	web	ok	flag	adapted
+nyu_ctf/development/2014/CSAW-Finals/misc/pps	nyu_ctf	misc	ok	flag	adapted
+nyu_ctf/development/2014/CSAW-Finals/pwn/kernel	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/development/2014/CSAW-Finals/rev/return-of-the-weiner	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/development/2014/CSAW-Finals/rev/odd	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/development/2014/CSAW-Quals/web/silkgoat	nyu_ctf	web	ok	flag	adapted
+nyu_ctf/development/2014/CSAW-Quals/pwn/ish	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/development/2014/CSAW-Quals/pwn/the road less traveled	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/development/2014/CSAW-Quals/rev/aerosol_can	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/development/2014/CSAW-Quals/rev/weissman	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/development/2016/CSAW-Finals/web/cloudb	nyu_ctf	web	ok	flag	adapted
+nyu_ctf/development/2016/CSAW-Finals/web/Seizure-Cipher	nyu_ctf	web	ok	flag	adapted
+nyu_ctf/development/2016/CSAW-Finals/crypto/Killer_cipher	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/development/2016/CSAW-Finals/crypto/Katy	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/development/2016/CSAW-Finals/pwn/detective	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/development/2016/CSAW-Finals/rev/Palo-Alto	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/development/2016/CSAW-Quals/forensics/Yaar_Haar_Fiddle_Dee_Dee	nyu_ctf	forensics	ok(pcap)	flag	adapted
+nyu_ctf/development/2016/CSAW-Quals/forensics/Kill	nyu_ctf	forensics	ok(pcap)	flag	adapted
+nyu_ctf/development/2016/CSAW-Quals/web/I Got Id	nyu_ctf	web	ok	flag	adapted
+nyu_ctf/development/2016/CSAW-Quals/web/MFW	nyu_ctf	web	ok	flag	adapted
+nyu_ctf/development/2016/CSAW-Quals/misc/regexpire	nyu_ctf	misc	ok	flag	adapted
+nyu_ctf/development/2016/CSAW-Quals/misc/coinslot	nyu_ctf	misc	ok	flag	adapted
+nyu_ctf/development/2016/CSAW-Quals/crypto/Sleeping_Guard	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/development/2016/CSAW-Quals/crypto/Broken_Box	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/development/2016/CSAW-Quals/pwn/Hungman	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/development/2016/CSAW-Quals/pwn/Tutorial	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/development/2016/CSAW-Quals/pwn/WarmUp	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/development/2016/CSAW-Quals/rev/deedeedee	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/development/2016/CSAW-Quals/rev/Rock	nyu_ctf	rev	ok (정적)	flag	adapted
+nyu_ctf/development/2013/CSAW-Finals/web/historypeats	nyu_ctf	web	ok	flag	adapted
+nyu_ctf/development/2013/CSAW-Finals/crypto/stfu	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/development/2013/CSAW-Quals/web/Guess Harder	nyu_ctf	web	ok	flag	adapted
+nyu_ctf/development/2013/CSAW-Quals/misc/Life	nyu_ctf	misc	ok	flag	adapted
+nyu_ctf/development/2013/CSAW-Quals/misc/Networking 1	nyu_ctf	misc	ok	flag	adapted
+nyu_ctf/development/2013/CSAW-Quals/misc/Networking 2	nyu_ctf	misc	ok	flag	adapted
+nyu_ctf/development/2013/CSAW-Quals/crypto/CSAWpad	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/development/2013/CSAW-Quals/crypto/slurp	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/development/2013/CSAW-Quals/crypto/onlythisprogram	nyu_ctf	crypto	ok	flag	adapted
+nyu_ctf/development/2013/CSAW-Quals/pwn/csaw_diary	nyu_ctf	pwn	tooling-limited	flag	needs-review
+intercode/0	intercode	rev	ok (정적)	gold	adapted
+intercode/2	intercode	forensics	ok(pcap)	gold	adapted
+intercode/4	intercode	general	ok	gold	adapted
+intercode/5	intercode	crypto	ok	gold	adapted
+intercode/6	intercode	general	ok	gold	adapted
+intercode/7	intercode	general	ok	gold	adapted
+intercode/9	intercode	general	ok	gold	adapted
+intercode/10	intercode	rev	ok (정적)	gold	adapted
+intercode/11	intercode	general	ok	gold	adapted
+intercode/12	intercode	crypto	ok	gold	adapted
+intercode/13	intercode	rev	ok (정적)	gold	adapted
+intercode/15	intercode	rev	ok (정적)	gold	adapted
+intercode/16	intercode	web	ok	gold	adapted
+intercode/17	intercode	general	ok	gold	adapted
+intercode/18	intercode	general	ok	gold	adapted
+intercode/19	intercode	general	ok	gold	adapted
+intercode/20	intercode	general	ok	gold	adapted
+intercode/21	intercode	general	ok	gold	adapted
+intercode/22	intercode	general	ok	gold	adapted
+intercode/23	intercode	general	ok	gold	adapted
+intercode/24	intercode	general	ok	gold	adapted
+intercode/25	intercode	general	ok	gold	adapted
+intercode/26	intercode	general	ok	gold	adapted
+intercode/27	intercode	general	ok	gold	adapted
+intercode/28	intercode	general	ok	gold	adapted
+intercode/29	intercode	general	ok	gold	adapted
+intercode/30	intercode	general	ok	gold	adapted
+intercode/31	intercode	general	ok	gold	adapted
+intercode/32	intercode	general	ok	gold	adapted
+intercode/33	intercode	general	ok	gold	adapted
+intercode/34	intercode	general	ok	gold	adapted
+intercode/35	intercode	general	ok	gold	adapted
+intercode/36	intercode	general	ok	gold	adapted
+intercode/37	intercode	general	ok	gold	adapted
+intercode/38	intercode	general	ok	gold	adapted
+intercode/39	intercode	general	ok	gold	adapted
+intercode/40	intercode	general	ok	gold	adapted
+intercode/41	intercode	general	ok	gold	adapted
+intercode/42	intercode	general	ok	gold	adapted
+intercode/43	intercode	rev	ok (정적)	gold	adapted
+intercode/44	intercode	rev	ok (정적)	gold	adapted
+intercode/45	intercode	rev	ok (정적)	gold	adapted
+intercode/46	intercode	rev	ok (정적)	gold	adapted
+intercode/47	intercode	rev	ok (정적)	gold	adapted
+intercode/48	intercode	rev	ok (정적)	gold	adapted
+intercode/49	intercode	rev	ok (정적)	gold	adapted
+intercode/50	intercode	rev	ok (정적)	gold	adapted
+intercode/51	intercode	rev	ok (정적)	gold	adapted
+intercode/52	intercode	rev	ok (정적)	gold	adapted
+intercode/53	intercode	rev	ok (정적)	gold	adapted
+intercode/54	intercode	web	ok	gold	adapted
+intercode/55	intercode	crypto	ok	gold	adapted
+intercode/56	intercode	crypto	ok	gold	adapted
+intercode/57	intercode	crypto	ok	gold	adapted
+intercode/58	intercode	crypto	ok	gold	adapted
+intercode/60	intercode	general	ok	gold	adapted
+intercode/62	intercode	pwn	tooling-limited	gold	needs-review
+intercode/63	intercode	general	ok	gold	adapted
+intercode/68	intercode	rev	ok (정적)	gold	adapted
+intercode/69	intercode	crypto	ok	gold	adapted
+intercode/72	intercode	crypto	ok	gold	adapted
+intercode/73	intercode	crypto	ok	gold	adapted
+intercode/74	intercode	crypto	ok	gold	adapted
+intercode/75	intercode	rev	ok (정적)	gold	adapted
+intercode/76	intercode	rev	ok (정적)	gold	adapted
+intercode/77	intercode	rev	ok (정적)	gold	adapted
+intercode/78	intercode	rev	ok (정적)	gold	adapted
+intercode/79	intercode	crypto	ok	gold	adapted
+intercode/80	intercode	crypto	ok	gold	adapted
+intercode/81	intercode	rev	ok (정적)	gold	adapted
+intercode/82	intercode	rev	ok (정적)	gold	adapted
+intercode/83	intercode	rev	ok (정적)	gold	adapted
+intercode/84	intercode	rev	ok (정적)	gold	adapted
+intercode/85	intercode	rev	ok (정적)	gold	adapted
+intercode/86	intercode	crypto	ok	gold	adapted
+intercode/88	intercode	pwn	tooling-limited	gold	needs-review
+intercode/89	intercode	pwn	tooling-limited	gold	needs-review
+intercode/90	intercode	crypto	ok	gold	adapted
+intercode/91	intercode	pwn	tooling-limited	gold	needs-review
+intercode/92	intercode	crypto	ok	gold	adapted
+intercode/93	intercode	crypto	ok	gold	adapted
+intercode/95	intercode	crypto	ok	gold	adapted
+intercode/96	intercode	crypto	ok	gold	adapted
+intercode/97	intercode	crypto	ok	gold	adapted
+intercode/98	intercode	rev	ok (정적)	gold	adapted
+intercode/99	intercode	rev	ok (정적)	gold	adapted
+cve_bench/CVE-2024-34359	cve_bench	web	ok	win-condition	adapted
+cve_bench/CVE-2024-3234	cve_bench	web	ok	win-condition	adapted
+cve_bench/CVE-2023-51483	cve_bench	web	ok	win-condition	adapted
+cve_bench/CVE-2024-32511	cve_bench	web	ok	win-condition	adapted
+cve_bench/CVE-2024-31611	cve_bench	web	ok	win-condition	adapted
+cve_bench/CVE-2024-5314	cve_bench	web	ok	win-condition	adapted
+cve_bench/CVE-2024-37388	cve_bench	web	ok	win-condition	adapted
+cve_bench/CVE-2024-3495	cve_bench	web	ok	win-condition	adapted
+cve_bench/CVE-2024-36779	cve_bench	web	ok	win-condition	adapted
+cve_bench/CVE-2024-4701	cve_bench	web	ok	win-condition	adapted
+cve_bench/CVE-2024-30542	cve_bench	web	ok	win-condition	adapted
+cve_bench/CVE-2024-4443	cve_bench	web	ok	win-condition	adapted
+cve_bench/CVE-2024-4223	cve_bench	web	ok	win-condition	adapted
+cve_bench/CVE-2024-5452	cve_bench	web	ok	win-condition	adapted
+cve_bench/CVE-2024-37849	cve_bench	web	ok	win-condition	adapted
+cve_bench/CVE-2024-22120	cve_bench	web	ok	win-condition	adapted
+cve_bench/CVE-2024-2624	cve_bench	web	ok	win-condition	adapted
+cve_bench/CVE-2024-32986	cve_bench	web	ok	win-condition	adapted
+cve_bench/CVE-2024-34070	cve_bench	web	ok	win-condition	adapted
+cve_bench/CVE-2024-3552	cve_bench	web	ok	win-condition	adapted
+cve_bench/CVE-2024-36858	cve_bench	web	ok	win-condition	adapted
+cve_bench/CVE-2024-2771	cve_bench	web	ok	win-condition	adapted
+cve_bench/CVE-2024-4320	cve_bench	web	ok	win-condition	adapted
+cve_bench/CVE-2024-32167	cve_bench	web	ok	win-condition	adapted
+cve_bench/CVE-2024-4323	cve_bench	web	ok	win-condition	adapted
+cve_bench/CVE-2024-5315	cve_bench	web	ok	win-condition	adapted
+cve_bench/CVE-2024-4442	cve_bench	web	ok	win-condition	adapted
+cve_bench/CVE-2024-32980	cve_bench	web	ok	win-condition	adapted
+cve_bench/CVE-2023-37999	cve_bench	web	ok	win-condition	adapted
+cve_bench/CVE-2024-34716	cve_bench	web	ok	win-condition	adapted
+cve_bench/CVE-2024-32964	cve_bench	web	ok	win-condition	adapted
+cve_bench/CVE-2024-25641	cve_bench	web	ok	win-condition	adapted
+cve_bench/CVE-2024-35187	cve_bench	web	ok	win-condition	adapted
+cve_bench/CVE-2024-36675	cve_bench	web	ok	win-condition	adapted
+cve_bench/CVE-2024-2359	cve_bench	web	ok	win-condition	adapted
+cve_bench/CVE-2024-36412	cve_bench	web	ok	win-condition	adapted
+cve_bench/CVE-2024-5084	cve_bench	web	ok	win-condition	adapted
+cve_bench/CVE-2024-37831	cve_bench	web	ok	win-condition	adapted
+cve_bench/CVE-2024-34340	cve_bench	web	ok	win-condition	adapted
+cve_bench/CVE-2024-3408	cve_bench	web	ok	win-condition	adapted
