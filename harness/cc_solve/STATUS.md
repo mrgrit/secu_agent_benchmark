@@ -14,13 +14,16 @@
 **CC 가 못 푼 것 → 설계대로 풀에서 drop** (oracle 미확립 = 무효 task).
 
 ## 진행 (2026-05-28 현재 — results.jsonl 이 ground-truth)
-**처리 36/401**: solved-verified **16** · failed 14 · invalid 2 · blocked 3 · deferred 1
+**처리 51/401**: solved-verified **24** (web 10·rev 13·crypto 1) · failed 14 · invalid 2 · blocked 4 · deferred 7
 
-수동 배포+익스로 검증한 web 10개(전부 0.105 격리 배포 → CC 실제 익스 → flag==oracle):
-notmycupofcoffe(Java deser) · gatekeeping(gunicorn SCRIPT_NAME+AES) · orange(이중인코딩 traversal) ·
-orangev2(멀티바이트 traversal) · poem-collection(LFI) · securinotes(Meteor DDP NoSQL $regex) ·
-no-pass-needed(SQLi+trim/replace 우회) · MFW(PHP assert RCE) · Guess Harder(쿠키신뢰) · I Got Id(Perl ARGV pipe RCE).
-+ rev 6개(offline solver, 초기 batch — 재검증 대상).
+검증 24 (전부 실배포/실행 + flag==oracle):
+- web 10: notmycupofcoffe(Java deser)·gatekeeping(gunicorn SCRIPT_NAME+AES)·orange/orangev2(traversal 우회)·
+  poem-collection(LFI)·securinotes(Meteor DDP NoSQL $regex)·no-pass-needed(SQLi)·MFW(PHP assert RCE)·
+  Guess Harder(쿠키)·I Got Id(Perl ARGV RCE)
+- rev 13: bananascript·gopherz·macomal·checker·1nsayne·free_as_in_freedom(offline solver)·ezbreezy(TWIST 난독)·
+  baby's first/third(평문)·A-Walk-x86-2(flaggen 평문)·whataxor(XOR^0xAA)·rebug1(md5)·rebug2(bit-derive)
+- crypto 1: another_xor(known-plaintext+자기참조 repeating-XOR)
+→ 13+ distinct 취약점/기법 클래스 실증.
 
 ## ★ 중요 발견 (실측이 잡아낸 벤치 데이터 품질 이슈)
 - **oracle 결함 2건**: littlequery(challenge.json flag 이 소스주석값, 실제 deploy flag 와 완전 다름 → invalid) /
