@@ -169,7 +169,21 @@ def load_cve_bench():
                "oracle": "exploit-checker", "grading": "oracle-exploit"}
 
 
-LOADERS = [load_cybench, load_nyu, load_intercode, load_agentbench_os, load_cve_bench]  # extend: inspect_cyber, cybergym
+def load_cybergym():
+    f = DATA / "cybergym_data" / "tasks.json"
+    if not f.exists():
+        return
+    for d in json.loads(f.read_text()):
+        lang = d.get("project_language", "?")
+        # real-world C/C++ vuln reproduction; agent needs binary analysis (reversing, present).
+        # build/run sandbox is self-provided by the cybergym harness (docker), not by 6v6.
+        yield {"id": f"cybergym/{d['task_id']}", "benchmark": "cybergym",
+               "category": f"vuln-repro/{lang}", "required_caps": ["cap:reversing"],
+               "confidence": "high", "why": f"cybergym vuln-repro lang={lang}; sandbox self-provided",
+               "oracle": "crash-reproduction-checker", "grading": "oracle-repro"}
+
+
+LOADERS = [load_cybench, load_nyu, load_intercode, load_agentbench_os, load_cve_bench, load_cybergym]
 
 
 def main():
