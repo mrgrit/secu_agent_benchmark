@@ -7,9 +7,9 @@ cybench/just-another-pickle-jail	cybench	misc	ok	subtask-answers	adapted
 cybench/randsubware	cybench	crypto	ok	subtask-answers	adapted
 cybench/noisy-crc	cybench	crypto	ok	subtask-answers	adapted
 cybench/noisier-crc	cybench	crypto	ok	subtask-answers	adapted
-cybench/algorithm-multitool	cybench	pwn	tooling-limited	subtask-answers	needs-review
-cybench/network-tools	cybench	pwn	tooling-limited	subtask-answers	needs-review
-cybench/text-sender	cybench	pwn	tooling-limited	subtask-answers	needs-review
+cybench/algorithm-multitool	cybench	pwn	tooling-limited	subtask-answers	adapted
+cybench/network-tools	cybench	pwn	tooling-limited	subtask-answers	adapted
+cybench/text-sender	cybench	pwn	tooling-limited	subtask-answers	adapted
 cybench/matrix-lab-2	cybench	rev	ok (정적)	subtask-answers	adapted
 cybench/diffecient	cybench	crypto	ok	subtask-answers	adapted
 cybench/failproof	cybench	crypto	ok	subtask-answers	adapted
@@ -32,7 +32,7 @@ cybench/[Very Easy] Dynastic	cybench	crypto	ok	subtask-answers	adapted
 cybench/[Very Easy] Primary Knowledge	cybench	crypto	ok	subtask-answers	adapted
 cybench/[Very Easy] Makeshift	cybench	crypto	ok	subtask-answers	adapted
 cybench/[Medium] Partial Tenacity	cybench	crypto	ok	subtask-answers	adapted
-cybench/[Very Easy] Delulu	cybench	pwn	tooling-limited	subtask-answers	needs-review
+cybench/[Very Easy] Delulu	cybench	pwn	tooling-limited	subtask-answers	adapted
 cybench/[Very Easy] PackedAway	cybench	rev	ok (정적)	subtask-answers	adapted
 cybench/[Medium] QuickScan	cybench	rev	ok (정적)	subtask-answers	adapted
 cybench/[Very Easy] BoxCutter	cybench	rev	ok (정적)	subtask-answers	adapted
@@ -42,7 +42,7 @@ cybench/[Easy] Crushing	cybench	rev	ok (정적)	subtask-answers	adapted
 cybench/Maze [Very Easy]	cybench	misc	ok	subtask-answers	adapted
 nyu_ctf/test/2017/CSAW-Finals/crypto/ECXOR	nyu_ctf	crypto	ok	flag	adapted
 nyu_ctf/test/2017/CSAW-Finals/crypto/Lupin	nyu_ctf	crypto	ok	flag	adapted
-nyu_ctf/test/2017/CSAW-Finals/pwn/Humm_sCh-t	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2017/CSAW-Finals/pwn/Humm_sCh-t	nyu_ctf	pwn	tooling-limited	flag	adapted
 nyu_ctf/test/2017/CSAW-Finals/rev/rabbithole	nyu_ctf	rev	ok (정적)	flag	adapted
 nyu_ctf/test/2017/CSAW-Finals/rev/rusty_road	nyu_ctf	rev	ok (정적)	flag	adapted
 nyu_ctf/test/2017/CSAW-Finals/rev/48-bit_yeet_lab	nyu_ctf	rev	ok (정적)	flag	adapted
@@ -56,8 +56,8 @@ nyu_ctf/test/2017/CSAW-Quals/misc/cvv	nyu_ctf	misc	ok	flag	adapted
 nyu_ctf/test/2017/CSAW-Quals/crypto/baby_crypt	nyu_ctf	crypto	ok	flag	adapted
 nyu_ctf/test/2017/CSAW-Quals/crypto/another_xor	nyu_ctf	crypto	ok	flag	adapted
 nyu_ctf/test/2017/CSAW-Quals/crypto/almost_xor	nyu_ctf	crypto	ok	flag	adapted
-nyu_ctf/test/2017/CSAW-Quals/pwn/pilot	nyu_ctf	pwn	tooling-limited	flag	needs-review
-nyu_ctf/test/2017/CSAW-Quals/pwn/zone	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2017/CSAW-Quals/pwn/pilot	nyu_ctf	pwn	tooling-limited	flag	adapted
+nyu_ctf/test/2017/CSAW-Quals/pwn/zone	nyu_ctf	pwn	tooling-limited	flag	adapted
 nyu_ctf/test/2017/CSAW-Quals/rev/tablez	nyu_ctf	rev	ok (정적)	flag	adapted
 nyu_ctf/test/2017/CSAW-Quals/rev/grumpcheck	nyu_ctf	rev	ok (정적)	flag	adapted
 nyu_ctf/test/2017/CSAW-Quals/rev/bananascript	nyu_ctf	rev	ok (정적)	flag	adapted
@@ -69,8 +69,8 @@ nyu_ctf/test/2021/CSAW-Finals/misc/terminal-velocity	nyu_ctf	misc	ok	flag	adapte
 nyu_ctf/test/2021/CSAW-Finals/crypto/Interoperable	nyu_ctf	crypto	ok	flag	adapted
 nyu_ctf/test/2021/CSAW-Finals/crypto/iBad	nyu_ctf	crypto	ok	flag	adapted
 nyu_ctf/test/2021/CSAW-Finals/crypto/Collision-Course	nyu_ctf	crypto	ok	flag	adapted
-nyu_ctf/test/2021/CSAW-Finals/pwn/chatterbox	nyu_ctf	pwn	tooling-limited	flag	needs-review
-nyu_ctf/test/2021/CSAW-Finals/pwn/horrorscope	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2021/CSAW-Finals/pwn/chatterbox	nyu_ctf	pwn	tooling-limited	flag	adapted
+nyu_ctf/test/2021/CSAW-Finals/pwn/horrorscope	nyu_ctf	pwn	tooling-limited	flag	adapted
 nyu_ctf/test/2021/CSAW-Finals/rev/maze	nyu_ctf	rev	ok (정적)	flag	adapted
 nyu_ctf/test/2021/CSAW-Finals/rev/sfc	nyu_ctf	rev	ok (정적)	flag	adapted
 nyu_ctf/test/2021/CSAW-Quals/forensics/Lazy-Leaks	nyu_ctf	forensics	ok(pcap)	flag	adapted
@@ -87,10 +87,10 @@ nyu_ctf/test/2021/CSAW-Quals/crypto/Gotta-Decrypt-Them-All	nyu_ctf	crypto	ok	fla
 nyu_ctf/test/2021/CSAW-Quals/crypto/RSA-Pop-Quiz	nyu_ctf	crypto	ok	flag	adapted
 nyu_ctf/test/2021/CSAW-Quals/crypto/Forgery	nyu_ctf	crypto	ok	flag	adapted
 nyu_ctf/test/2021/CSAW-Quals/crypto/Bits	nyu_ctf	crypto	ok	flag	adapted
-nyu_ctf/test/2021/CSAW-Quals/pwn/alien-math	nyu_ctf	pwn	tooling-limited	flag	needs-review
-nyu_ctf/test/2021/CSAW-Quals/pwn/krypto	nyu_ctf	pwn	tooling-limited	flag	needs-review
-nyu_ctf/test/2021/CSAW-Quals/pwn/haystack	nyu_ctf	pwn	tooling-limited	flag	needs-review
-nyu_ctf/test/2021/CSAW-Quals/pwn/Password-Checker	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2021/CSAW-Quals/pwn/alien-math	nyu_ctf	pwn	tooling-limited	flag	adapted
+nyu_ctf/test/2021/CSAW-Quals/pwn/krypto	nyu_ctf	pwn	tooling-limited	flag	adapted
+nyu_ctf/test/2021/CSAW-Quals/pwn/haystack	nyu_ctf	pwn	tooling-limited	flag	adapted
+nyu_ctf/test/2021/CSAW-Quals/pwn/Password-Checker	nyu_ctf	pwn	tooling-limited	flag	adapted
 nyu_ctf/test/2021/CSAW-Quals/rev/ncore	nyu_ctf	rev	ok (정적)	flag	adapted
 nyu_ctf/test/2021/CSAW-Quals/rev/macomal	nyu_ctf	rev	ok (정적)	flag	adapted
 nyu_ctf/test/2021/CSAW-Quals/rev/checker	nyu_ctf	rev	ok (정적)	flag	adapted
@@ -102,7 +102,7 @@ nyu_ctf/test/2020/CSAW-Finals/crypto/eccentric	nyu_ctf	crypto	ok	flag	adapted
 nyu_ctf/test/2020/CSAW-Finals/crypto/hybrid2	nyu_ctf	crypto	ok	flag	adapted
 nyu_ctf/test/2020/CSAW-Finals/crypto/jackpot	nyu_ctf	crypto	ok	flag	adapted
 nyu_ctf/test/2020/CSAW-Finals/crypto/the_matrix	nyu_ctf	crypto	ok	flag	adapted
-nyu_ctf/test/2020/CSAW-Finals/pwn/darkunion1	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2020/CSAW-Finals/pwn/darkunion1	nyu_ctf	pwn	tooling-limited	flag	adapted
 nyu_ctf/test/2020/CSAW-Finals/rev/sourcery	nyu_ctf	rev	ok (정적)	flag	adapted
 nyu_ctf/test/2020/CSAW-Finals/rev/brrr	nyu_ctf	rev	ok (정적)	flag	adapted
 nyu_ctf/test/2020/CSAW-Finals/rev/yeet	nyu_ctf	rev	ok (정적)	flag	adapted
@@ -113,13 +113,13 @@ nyu_ctf/test/2020/CSAW-Quals/crypto/perfect_secrecy	nyu_ctf	crypto	ok	flag	adapt
 nyu_ctf/test/2020/CSAW-Quals/crypto/authy	nyu_ctf	crypto	ok	flag	adapted
 nyu_ctf/test/2020/CSAW-Quals/crypto/modus_operandi	nyu_ctf	crypto	ok	flag	adapted
 nyu_ctf/test/2020/CSAW-Quals/crypto/difib	nyu_ctf	crypto	ok	flag	adapted
-nyu_ctf/test/2020/CSAW-Quals/pwn/roppity	nyu_ctf	pwn	tooling-limited	flag	needs-review
-nyu_ctf/test/2020/CSAW-Quals/pwn/thebardsfail	nyu_ctf	pwn	tooling-limited	flag	needs-review
-nyu_ctf/test/2020/CSAW-Quals/pwn/blox2	nyu_ctf	pwn	tooling-limited	flag	needs-review
-nyu_ctf/test/2020/CSAW-Quals/pwn/grid	nyu_ctf	pwn	tooling-limited	flag	needs-review
-nyu_ctf/test/2020/CSAW-Quals/pwn/slithery	nyu_ctf	pwn	tooling-limited	flag	needs-review
-nyu_ctf/test/2020/CSAW-Quals/pwn/feather	nyu_ctf	pwn	tooling-limited	flag	needs-review
-nyu_ctf/test/2020/CSAW-Quals/pwn/pwnvoltex	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2020/CSAW-Quals/pwn/roppity	nyu_ctf	pwn	tooling-limited	flag	adapted
+nyu_ctf/test/2020/CSAW-Quals/pwn/thebardsfail	nyu_ctf	pwn	tooling-limited	flag	adapted
+nyu_ctf/test/2020/CSAW-Quals/pwn/blox2	nyu_ctf	pwn	tooling-limited	flag	adapted
+nyu_ctf/test/2020/CSAW-Quals/pwn/grid	nyu_ctf	pwn	tooling-limited	flag	adapted
+nyu_ctf/test/2020/CSAW-Quals/pwn/slithery	nyu_ctf	pwn	tooling-limited	flag	adapted
+nyu_ctf/test/2020/CSAW-Quals/pwn/feather	nyu_ctf	pwn	tooling-limited	flag	adapted
+nyu_ctf/test/2020/CSAW-Quals/pwn/pwnvoltex	nyu_ctf	pwn	tooling-limited	flag	adapted
 nyu_ctf/test/2020/CSAW-Quals/rev/baby_mult	nyu_ctf	rev	ok (정적)	flag	adapted
 nyu_ctf/test/2020/CSAW-Quals/rev/ezbreezy	nyu_ctf	rev	ok (정적)	flag	adapted
 nyu_ctf/test/2020/CSAW-Quals/rev/not_malware	nyu_ctf	rev	ok (정적)	flag	adapted
@@ -128,7 +128,7 @@ nyu_ctf/test/2018/CSAW-Finals/misc/leaked_flag	nyu_ctf	misc	ok	flag	adapted
 nyu_ctf/test/2018/CSAW-Finals/crypto/lost_mind	nyu_ctf	crypto	ok	flag	adapted
 nyu_ctf/test/2018/CSAW-Finals/crypto/distastrous_security_apparatus	nyu_ctf	crypto	ok	flag	adapted
 nyu_ctf/test/2018/CSAW-Finals/crypto/asr4cr	nyu_ctf	crypto	ok	flag	adapted
-nyu_ctf/test/2018/CSAW-Finals/pwn/ES1337	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2018/CSAW-Finals/pwn/ES1337	nyu_ctf	pwn	tooling-limited	flag	adapted
 nyu_ctf/test/2018/CSAW-Finals/rev/1nsayne	nyu_ctf	rev	ok (정적)	flag	adapted
 nyu_ctf/test/2018/CSAW-Finals/rev/free_as_in_freedom	nyu_ctf	rev	ok (정적)	flag	adapted
 nyu_ctf/test/2018/CSAW-Finals/rev/bdos	nyu_ctf	rev	ok (정적)	flag	adapted
@@ -139,9 +139,9 @@ nyu_ctf/test/2018/CSAW-Quals/crypto/babycrypto	nyu_ctf	crypto	ok	flag	adapted
 nyu_ctf/test/2018/CSAW-Quals/crypto/collusion	nyu_ctf	crypto	ok	flag	adapted
 nyu_ctf/test/2018/CSAW-Quals/crypto/lowe	nyu_ctf	crypto	ok	flag	adapted
 nyu_ctf/test/2018/CSAW-Quals/crypto/flatcrypt	nyu_ctf	crypto	ok	flag	adapted
-nyu_ctf/test/2018/CSAW-Quals/pwn/bigboy	nyu_ctf	pwn	tooling-limited	flag	needs-review
-nyu_ctf/test/2018/CSAW-Quals/pwn/shellpointcode	nyu_ctf	pwn	tooling-limited	flag	needs-review
-nyu_ctf/test/2018/CSAW-Quals/pwn/get_it?	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2018/CSAW-Quals/pwn/bigboy	nyu_ctf	pwn	tooling-limited	flag	adapted
+nyu_ctf/test/2018/CSAW-Quals/pwn/shellpointcode	nyu_ctf	pwn	tooling-limited	flag	adapted
+nyu_ctf/test/2018/CSAW-Quals/pwn/get_it?	nyu_ctf	pwn	tooling-limited	flag	adapted
 nyu_ctf/test/2018/CSAW-Quals/rev/A-Walk-Through-x86-Part-1	nyu_ctf	rev	ok (정적)	flag	adapted
 nyu_ctf/test/2018/CSAW-Quals/rev/A-Walk-Through-x86-Part-2	nyu_ctf	rev	ok (정적)	flag	adapted
 nyu_ctf/test/2018/CSAW-Quals/rev/kvm	nyu_ctf	rev	ok (정적)	flag	adapted
@@ -154,7 +154,7 @@ nyu_ctf/test/2023/CSAW-Finals/misc/vectors_machine	nyu_ctf	misc	ok	flag	adapted
 nyu_ctf/test/2023/CSAW-Finals/crypto/DescribeMe	nyu_ctf	crypto	ok	flag	adapted
 nyu_ctf/test/2023/CSAW-Finals/crypto/Textbook-RSA	nyu_ctf	crypto	ok	flag	adapted
 nyu_ctf/test/2023/CSAW-Finals/crypto/nervcenter	nyu_ctf	crypto	ok	flag	adapted
-nyu_ctf/test/2023/CSAW-Finals/pwn/brainflop	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2023/CSAW-Finals/pwn/brainflop	nyu_ctf	pwn	tooling-limited	flag	adapted
 nyu_ctf/test/2023/CSAW-Finals/pwn/Virtualization-pwn	nyu_ctf	pwn	tooling-limited	flag	needs-review
 nyu_ctf/test/2023/CSAW-Finals/rev/Virtualization	nyu_ctf	rev	ok (정적)	flag	adapted
 nyu_ctf/test/2023/CSAW-Finals/rev/unVirtualization	nyu_ctf	rev	ok (정적)	flag	adapted
@@ -168,10 +168,10 @@ nyu_ctf/test/2023/CSAW-Quals/misc/TradingGame	nyu_ctf	misc	ok	flag	adapted
 nyu_ctf/test/2023/CSAW-Quals/crypto/circles	nyu_ctf	crypto	ok	flag	adapted
 nyu_ctf/test/2023/CSAW-Quals/crypto/mental-poker	nyu_ctf	crypto	ok	flag	adapted
 nyu_ctf/test/2023/CSAW-Quals/crypto/lottery	nyu_ctf	crypto	ok	flag	adapted
-nyu_ctf/test/2023/CSAW-Quals/pwn/puffin	nyu_ctf	pwn	tooling-limited	flag	needs-review
-nyu_ctf/test/2023/CSAW-Quals/pwn/unlimited_subway	nyu_ctf	pwn	tooling-limited	flag	needs-review
-nyu_ctf/test/2023/CSAW-Quals/pwn/target practice	nyu_ctf	pwn	tooling-limited	flag	needs-review
-nyu_ctf/test/2023/CSAW-Quals/pwn/my_first_pwnie	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2023/CSAW-Quals/pwn/puffin	nyu_ctf	pwn	tooling-limited	flag	adapted
+nyu_ctf/test/2023/CSAW-Quals/pwn/unlimited_subway	nyu_ctf	pwn	tooling-limited	flag	adapted
+nyu_ctf/test/2023/CSAW-Quals/pwn/target practice	nyu_ctf	pwn	tooling-limited	flag	adapted
+nyu_ctf/test/2023/CSAW-Quals/pwn/my_first_pwnie	nyu_ctf	pwn	tooling-limited	flag	adapted
 nyu_ctf/test/2023/CSAW-Quals/rev/rebug 1	nyu_ctf	rev	ok (정적)	flag	adapted
 nyu_ctf/test/2023/CSAW-Quals/rev/baby's third	nyu_ctf	rev	ok (정적)	flag	adapted
 nyu_ctf/test/2023/CSAW-Quals/rev/rox	nyu_ctf	rev	ok (정적)	flag	adapted
@@ -181,7 +181,7 @@ nyu_ctf/test/2023/CSAW-Quals/rev/whataxor	nyu_ctf	rev	ok (정적)	flag	adapted
 nyu_ctf/test/2019/CSAW-Finals/web/biometric	nyu_ctf	web	ok	flag	adapted
 nyu_ctf/test/2019/CSAW-Finals/misc/alive	nyu_ctf	misc	ok	flag	adapted
 nyu_ctf/test/2019/CSAW-Finals/crypto/macrypto	nyu_ctf	crypto	ok	flag	adapted
-nyu_ctf/test/2019/CSAW-Finals/pwn/arevenge	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2019/CSAW-Finals/pwn/arevenge	nyu_ctf	pwn	tooling-limited	flag	adapted
 nyu_ctf/test/2019/CSAW-Finals/rev/mystery_boi	nyu_ctf	rev	ok (정적)	flag	adapted
 nyu_ctf/test/2019/CSAW-Finals/rev/wrangly	nyu_ctf	rev	ok (정적)	flag	adapted
 nyu_ctf/test/2019/CSAW-Finals/rev/steady_counting	nyu_ctf	rev	ok (정적)	flag	adapted
@@ -190,13 +190,13 @@ nyu_ctf/test/2019/CSAW-Quals/crypto/brillouin	nyu_ctf	crypto	ok	flag	adapted
 nyu_ctf/test/2019/CSAW-Quals/crypto/byte_me	nyu_ctf	crypto	ok	flag	adapted
 nyu_ctf/test/2019/CSAW-Quals/crypto/super_curve	nyu_ctf	crypto	ok	flag	adapted
 nyu_ctf/test/2019/CSAW-Quals/crypto/count_on_me	nyu_ctf	crypto	ok	flag	adapted
-nyu_ctf/test/2019/CSAW-Quals/pwn/small_boi	nyu_ctf	pwn	tooling-limited	flag	needs-review
-nyu_ctf/test/2019/CSAW-Quals/pwn/baby_boi	nyu_ctf	pwn	tooling-limited	flag	needs-review
-nyu_ctf/test/2019/CSAW-Quals/pwn/traveller	nyu_ctf	pwn	tooling-limited	flag	needs-review
-nyu_ctf/test/2019/CSAW-Quals/pwn/got_milk	nyu_ctf	pwn	tooling-limited	flag	needs-review
-nyu_ctf/test/2019/CSAW-Quals/pwn/pop_goes_the_printer	nyu_ctf	pwn	tooling-limited	flag	needs-review
-nyu_ctf/test/2019/CSAW-Quals/pwn/popping_caps_2	nyu_ctf	pwn	tooling-limited	flag	needs-review
-nyu_ctf/test/2019/CSAW-Quals/pwn/popping_caps	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2019/CSAW-Quals/pwn/small_boi	nyu_ctf	pwn	tooling-limited	flag	adapted
+nyu_ctf/test/2019/CSAW-Quals/pwn/baby_boi	nyu_ctf	pwn	tooling-limited	flag	adapted
+nyu_ctf/test/2019/CSAW-Quals/pwn/traveller	nyu_ctf	pwn	tooling-limited	flag	adapted
+nyu_ctf/test/2019/CSAW-Quals/pwn/got_milk	nyu_ctf	pwn	tooling-limited	flag	adapted
+nyu_ctf/test/2019/CSAW-Quals/pwn/pop_goes_the_printer	nyu_ctf	pwn	tooling-limited	flag	adapted
+nyu_ctf/test/2019/CSAW-Quals/pwn/popping_caps_2	nyu_ctf	pwn	tooling-limited	flag	adapted
+nyu_ctf/test/2019/CSAW-Quals/pwn/popping_caps	nyu_ctf	pwn	tooling-limited	flag	adapted
 nyu_ctf/test/2019/CSAW-Quals/rev/halfpike	nyu_ctf	rev	ok (정적)	flag	adapted
 nyu_ctf/test/2019/CSAW-Quals/rev/gibberish_check	nyu_ctf	rev	ok (정적)	flag	adapted
 nyu_ctf/test/2019/CSAW-Quals/rev/call_site	nyu_ctf	rev	ok (정적)	flag	adapted
@@ -208,8 +208,8 @@ nyu_ctf/test/2022/CSAW-Finals/crypto/The Lengths we Extend Ourselves	nyu_ctf	cry
 nyu_ctf/test/2022/CSAW-Finals/crypto/open-ELLIPTI-PH!	nyu_ctf	crypto	ok	flag	adapted
 nyu_ctf/test/2022/CSAW-Finals/crypto/polly-crack-this	nyu_ctf	crypto	ok	flag	adapted
 nyu_ctf/test/2022/CSAW-Finals/crypto/M@sTEr 0F PrN9	nyu_ctf	crypto	ok	flag	adapted
-nyu_ctf/test/2022/CSAW-Finals/pwn/Salt Server	nyu_ctf	pwn	tooling-limited	flag	needs-review
-nyu_ctf/test/2022/CSAW-Finals/pwn/CryptoPwn	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2022/CSAW-Finals/pwn/Salt Server	nyu_ctf	pwn	tooling-limited	flag	adapted
+nyu_ctf/test/2022/CSAW-Finals/pwn/CryptoPwn	nyu_ctf	pwn	tooling-limited	flag	adapted
 nyu_ctf/test/2022/CSAW-Finals/rev/roulette	nyu_ctf	rev	ok (정적)	flag	adapted
 nyu_ctf/test/2022/CSAW-Finals/rev/parallel vm	nyu_ctf	rev	ok (정적)	flag	adapted
 nyu_ctf/test/2022/CSAW-Quals/misc/ezMaze	nyu_ctf	misc	ok	flag	adapted
@@ -220,13 +220,13 @@ nyu_ctf/test/2022/CSAW-Quals/crypto/too-much-in-common	nyu_ctf	crypto	ok	flag	ad
 nyu_ctf/test/2022/CSAW-Quals/crypto/Beyond-Quantum	nyu_ctf	crypto	ok	flag	adapted
 nyu_ctf/test/2022/CSAW-Quals/crypto/gotta-crack-them-all	nyu_ctf	crypto	ok	flag	adapted
 nyu_ctf/test/2022/CSAW-Quals/crypto/not-too-taxing	nyu_ctf	crypto	ok	flag	adapted
-nyu_ctf/test/2022/CSAW-Quals/pwn/unsafe-linking	nyu_ctf	pwn	tooling-limited	flag	needs-review
-nyu_ctf/test/2022/CSAW-Quals/pwn/ezROP	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/test/2022/CSAW-Quals/pwn/unsafe-linking	nyu_ctf	pwn	tooling-limited	flag	adapted
+nyu_ctf/test/2022/CSAW-Quals/pwn/ezROP	nyu_ctf	pwn	tooling-limited	flag	adapted
 nyu_ctf/test/2022/CSAW-Quals/rev/dockREleakage	nyu_ctf	rev	ok (정적)	flag	adapted
 nyu_ctf/test/2022/CSAW-Quals/rev/the_big_bang	nyu_ctf	rev	ok (정적)	flag	adapted
 nyu_ctf/test/2022/CSAW-Quals/rev/game	nyu_ctf	rev	ok (정적)	flag	adapted
 nyu_ctf/test/2022/CSAW-Quals/rev/AnyaGacha	nyu_ctf	rev	ok (정적)	flag	adapted
-nyu_ctf/development/2015/CSAW-Finals/pwn/hipster	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/development/2015/CSAW-Finals/pwn/hipster	nyu_ctf	pwn	tooling-limited	flag	adapted
 nyu_ctf/development/2015/CSAW-Finals/rev/wyvern2	nyu_ctf	rev	ok (정적)	flag	adapted
 nyu_ctf/development/2015/CSAW-Quals/forensics/pcapin	nyu_ctf	forensics	ok(pcap)	flag	adapted
 nyu_ctf/development/2015/CSAW-Quals/web/throwback	nyu_ctf	web	ok	flag	adapted
@@ -234,7 +234,7 @@ nyu_ctf/development/2015/CSAW-Quals/web/k_stairs	nyu_ctf	web	ok	flag	adapted
 nyu_ctf/development/2015/CSAW-Quals/crypto/eps_part2	nyu_ctf	crypto	ok	flag	adapted
 nyu_ctf/development/2015/CSAW-Quals/crypto/bricks_of_gold	nyu_ctf	crypto	ok	flag	adapted
 nyu_ctf/development/2015/CSAW-Quals/crypto/eps	nyu_ctf	crypto	ok	flag	adapted
-nyu_ctf/development/2015/CSAW-Quals/pwn/meme-shop	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/development/2015/CSAW-Quals/pwn/meme-shop	nyu_ctf	pwn	tooling-limited	flag	adapted
 nyu_ctf/development/2015/CSAW-Quals/rev/ftp	nyu_ctf	rev	ok (정적)	flag	adapted
 nyu_ctf/development/2015/CSAW-Quals/rev/wyvern	nyu_ctf	rev	ok (정적)	flag	adapted
 nyu_ctf/development/2014/CSAW-Finals/web/webroot	nyu_ctf	web	ok	flag	adapted
@@ -243,15 +243,15 @@ nyu_ctf/development/2014/CSAW-Finals/pwn/kernel	nyu_ctf	pwn	tooling-limited	flag
 nyu_ctf/development/2014/CSAW-Finals/rev/return-of-the-weiner	nyu_ctf	rev	ok (정적)	flag	adapted
 nyu_ctf/development/2014/CSAW-Finals/rev/odd	nyu_ctf	rev	ok (정적)	flag	adapted
 nyu_ctf/development/2014/CSAW-Quals/web/silkgoat	nyu_ctf	web	ok	flag	adapted
-nyu_ctf/development/2014/CSAW-Quals/pwn/ish	nyu_ctf	pwn	tooling-limited	flag	needs-review
-nyu_ctf/development/2014/CSAW-Quals/pwn/the road less traveled	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/development/2014/CSAW-Quals/pwn/ish	nyu_ctf	pwn	tooling-limited	flag	adapted
+nyu_ctf/development/2014/CSAW-Quals/pwn/the road less traveled	nyu_ctf	pwn	tooling-limited	flag	adapted
 nyu_ctf/development/2014/CSAW-Quals/rev/aerosol_can	nyu_ctf	rev	ok (정적)	flag	adapted
 nyu_ctf/development/2014/CSAW-Quals/rev/weissman	nyu_ctf	rev	ok (정적)	flag	adapted
 nyu_ctf/development/2016/CSAW-Finals/web/cloudb	nyu_ctf	web	ok	flag	adapted
 nyu_ctf/development/2016/CSAW-Finals/web/Seizure-Cipher	nyu_ctf	web	ok	flag	adapted
 nyu_ctf/development/2016/CSAW-Finals/crypto/Killer_cipher	nyu_ctf	crypto	ok	flag	adapted
 nyu_ctf/development/2016/CSAW-Finals/crypto/Katy	nyu_ctf	crypto	ok	flag	adapted
-nyu_ctf/development/2016/CSAW-Finals/pwn/detective	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/development/2016/CSAW-Finals/pwn/detective	nyu_ctf	pwn	tooling-limited	flag	adapted
 nyu_ctf/development/2016/CSAW-Finals/rev/Palo-Alto	nyu_ctf	rev	ok (정적)	flag	adapted
 nyu_ctf/development/2016/CSAW-Quals/forensics/Yaar_Haar_Fiddle_Dee_Dee	nyu_ctf	forensics	ok(pcap)	flag	adapted
 nyu_ctf/development/2016/CSAW-Quals/forensics/Kill	nyu_ctf	forensics	ok(pcap)	flag	adapted
@@ -261,9 +261,9 @@ nyu_ctf/development/2016/CSAW-Quals/misc/regexpire	nyu_ctf	misc	ok	flag	adapted
 nyu_ctf/development/2016/CSAW-Quals/misc/coinslot	nyu_ctf	misc	ok	flag	adapted
 nyu_ctf/development/2016/CSAW-Quals/crypto/Sleeping_Guard	nyu_ctf	crypto	ok	flag	adapted
 nyu_ctf/development/2016/CSAW-Quals/crypto/Broken_Box	nyu_ctf	crypto	ok	flag	adapted
-nyu_ctf/development/2016/CSAW-Quals/pwn/Hungman	nyu_ctf	pwn	tooling-limited	flag	needs-review
-nyu_ctf/development/2016/CSAW-Quals/pwn/Tutorial	nyu_ctf	pwn	tooling-limited	flag	needs-review
-nyu_ctf/development/2016/CSAW-Quals/pwn/WarmUp	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/development/2016/CSAW-Quals/pwn/Hungman	nyu_ctf	pwn	tooling-limited	flag	adapted
+nyu_ctf/development/2016/CSAW-Quals/pwn/Tutorial	nyu_ctf	pwn	tooling-limited	flag	adapted
+nyu_ctf/development/2016/CSAW-Quals/pwn/WarmUp	nyu_ctf	pwn	tooling-limited	flag	adapted
 nyu_ctf/development/2016/CSAW-Quals/rev/deedeedee	nyu_ctf	rev	ok (정적)	flag	adapted
 nyu_ctf/development/2016/CSAW-Quals/rev/Rock	nyu_ctf	rev	ok (정적)	flag	adapted
 nyu_ctf/development/2013/CSAW-Finals/web/historypeats	nyu_ctf	web	ok	flag	adapted
@@ -275,7 +275,7 @@ nyu_ctf/development/2013/CSAW-Quals/misc/Networking 2	nyu_ctf	misc	ok	flag	adapt
 nyu_ctf/development/2013/CSAW-Quals/crypto/CSAWpad	nyu_ctf	crypto	ok	flag	adapted
 nyu_ctf/development/2013/CSAW-Quals/crypto/slurp	nyu_ctf	crypto	ok	flag	adapted
 nyu_ctf/development/2013/CSAW-Quals/crypto/onlythisprogram	nyu_ctf	crypto	ok	flag	adapted
-nyu_ctf/development/2013/CSAW-Quals/pwn/csaw_diary	nyu_ctf	pwn	tooling-limited	flag	needs-review
+nyu_ctf/development/2013/CSAW-Quals/pwn/csaw_diary	nyu_ctf	pwn	tooling-limited	flag	adapted
 intercode/0	intercode	rev	ok (정적)	gold	adapted
 intercode/2	intercode	forensics	ok(pcap)	gold	adapted
 intercode/4	intercode	general	ok	gold	adapted
@@ -332,7 +332,7 @@ intercode/56	intercode	crypto	ok	gold	adapted
 intercode/57	intercode	crypto	ok	gold	adapted
 intercode/58	intercode	crypto	ok	gold	adapted
 intercode/60	intercode	general	ok	gold	adapted
-intercode/62	intercode	pwn	tooling-limited	gold	needs-review
+intercode/62	intercode	pwn	tooling-limited	gold	adapted
 intercode/63	intercode	general	ok	gold	adapted
 intercode/68	intercode	rev	ok (정적)	gold	adapted
 intercode/69	intercode	crypto	ok	gold	adapted
@@ -351,10 +351,10 @@ intercode/83	intercode	rev	ok (정적)	gold	adapted
 intercode/84	intercode	rev	ok (정적)	gold	adapted
 intercode/85	intercode	rev	ok (정적)	gold	adapted
 intercode/86	intercode	crypto	ok	gold	adapted
-intercode/88	intercode	pwn	tooling-limited	gold	needs-review
-intercode/89	intercode	pwn	tooling-limited	gold	needs-review
+intercode/88	intercode	pwn	tooling-limited	gold	adapted
+intercode/89	intercode	pwn	tooling-limited	gold	adapted
 intercode/90	intercode	crypto	ok	gold	adapted
-intercode/91	intercode	pwn	tooling-limited	gold	needs-review
+intercode/91	intercode	pwn	tooling-limited	gold	adapted
 intercode/92	intercode	crypto	ok	gold	adapted
 intercode/93	intercode	crypto	ok	gold	adapted
 intercode/95	intercode	crypto	ok	gold	adapted
