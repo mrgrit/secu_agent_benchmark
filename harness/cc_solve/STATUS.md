@@ -13,8 +13,14 @@
 상태값: `solved-verified` / `failed:<이유>` / `blocked:<이유>`(도구·환경) / `pending`.
 **CC 가 못 푼 것 → 설계대로 풀에서 drop** (oracle 미확립 = 무효 task).
 
-## 진행 (2026-05-28 현재 — results.jsonl 이 ground-truth)
-**처리 51/401**: solved-verified **24** (web 10·rev 13·crypto 1) · failed 14 · invalid 2 · blocked 4 · deferred 7
+## 진행 (2026-05-29 현재 — results.jsonl 이 ground-truth)
+**처리 56/401**: solved-verified **29** (web 10·rev 15·crypto 1·misc 3) · failed 14 · invalid 2 · blocked 4 · deferred 7
+
+신규 5 (2026-05-29 cycle):
+- rev 2: beleaf(BST 인덱스 디코드, arr[fleg[i]]) · rox(shipped solver, csawctf wrapper)
+- misc 3: sigmaslogistics(ML weights=-ord(flag), oracle query model-stealing) ·
+  linear_aggressor(ML weights=ord(flag), 30 unit-vector probes) ·
+  bin_t(live AVL preorder challenge against 0.105 deployed container)
 
 검증 24 (전부 실배포/실행 + flag==oracle):
 - web 10: notmycupofcoffe(Java deser)·gatekeeping(gunicorn SCRIPT_NAME+AES)·orange/orangev2(traversal 우회)·
