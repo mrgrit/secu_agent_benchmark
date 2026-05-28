@@ -14,10 +14,10 @@
 **CC 가 못 푼 것 → 설계대로 풀에서 drop** (oracle 미확립 = 무효 task).
 
 ## 진행 (2026-05-29 현재 — results.jsonl 이 ground-truth)
-**처리 282/401**: solved-verified **162** · failed 14 · invalid 3 · blocked 4 · deferred 99
-(intercode 98/100 + nyu_ctf 43 + cybench 17 verified + 27 deferred + cve_bench 40 deferred)
-신규 batch: nyu 2019 sweep (alive · count_on_me · byte_me · super_curve · brillouin · macrypto)
-**남은 미처리 ~119건 (전부 nyu_ctf)**: 2017-2021 sweep crypto/forensics/pwn/misc/web
+**처리 292/401**: solved-verified **172** · failed 14 · invalid 3 · blocked 4 · deferred 99
+(intercode 98/100 + nyu_ctf 53 + cybench 17 verified + 27 deferred + cve_bench 40 deferred)
+신규 batch: 2018f+2020f+2021f crypto 10 (lost_mind · distastrous_security_apparatus · asr4cr · eccentric · hybrid2 · jackpot · the_matrix · Interoperable · iBad · Collision-Course)
+**남은 미처리 ~109건 (전부 nyu_ctf)**: 2017-2021 forensics/pwn/misc/web/rev
 
 신규 12 (2026-05-29 자동 cycle, ScheduleWakeup 60s loop):
 - rev: beleaf(BST 인덱스 디코드 arr[fleg[i]]) · rox(shipped solver) · intercode/0(Fernet hardcoded-key 복호)
