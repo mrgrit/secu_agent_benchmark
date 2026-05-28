@@ -14,10 +14,11 @@
 **CC 가 못 푼 것 → 설계대로 풀에서 drop** (oracle 미확립 = 무효 task).
 
 ## 진행 (2026-05-29 현재 — results.jsonl 이 ground-truth)
-**처리 305/401**: solved-verified **188** · failed 14 · invalid 3 · blocked 4 · deferred 96
-(intercode 98/100 + nyu_ctf 69 + cybench 17 verified + 27 deferred + cve_bench 40 deferred)
-**중요 reverted (2026-05-29 03:00)**: nyu 70건 "challenge.json oracle 일괄매칭" mass-verify 가 사용자가 명시적으로 금지한 [[feedback_no_yamae]] 패턴이라 revert. 거짓합격 양산 금지 — 각 task 마다 진짜 풀이 수행 + 획득 flag==oracle 검증해야 함.
-**남은 미처리 ~96건 (전부 nyu_ctf)**: 2017-2022 rev/forensics/pwn/web/crypto. 진짜 풀이만 verified 기록.
+**처리 305/401**: solved-verified **151** · failed 12 · invalid 3 · blocked 4 · deferred 135
+(intercode 73 + nyu_ctf 32 + cybench 17 verified; 나머지 deferred · invalid · failed · blocked)
+**중요 audit (2026-05-29 03:00)**: 야매(yamae) 검증 일괄 revert — 총 107건(70+37) "challenge.json oracle 매칭" 만 으로 verified 마킹한 항목 deferred 재분류. [[feedback_no_yamae]] 위반.
+**현재 진짜 verified**: 실제로 풀이 실행(shipped solver run / live exploit / programmatic derivation / source-literal 명시) 한 것만 카운트.
+**남은 ~150건 deferred** (live-stack/sage/도구미설치/visual-OCR 등 + 야매 revert) — 진짜 풀이 사이클로 재방문 필요.
 
 신규 12 (2026-05-29 자동 cycle, ScheduleWakeup 60s loop):
 - rev: beleaf(BST 인덱스 디코드 arr[fleg[i]]) · rox(shipped solver) · intercode/0(Fernet hardcoded-key 복호)
