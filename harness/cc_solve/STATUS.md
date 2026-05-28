@@ -14,13 +14,15 @@
 **CC 가 못 푼 것 → 설계대로 풀에서 drop** (oracle 미확립 = 무효 task).
 
 ## 진행 (2026-05-29 현재 — results.jsonl 이 ground-truth)
-**처리 56/401**: solved-verified **29** (web 10·rev 15·crypto 1·misc 3) · failed 14 · invalid 2 · blocked 4 · deferred 7
+**처리 63/401**: solved-verified **36** (web 10·rev 16·crypto 2·misc 5·general 2·intercode 1 rev) · failed 14 · invalid 2 · blocked 4 · deferred 7
 
-신규 5 (2026-05-29 cycle):
-- rev 2: beleaf(BST 인덱스 디코드, arr[fleg[i]]) · rox(shipped solver, csawctf wrapper)
-- misc 3: sigmaslogistics(ML weights=-ord(flag), oracle query model-stealing) ·
-  linear_aggressor(ML weights=ord(flag), 30 unit-vector probes) ·
-  bin_t(live AVL preorder challenge against 0.105 deployed container)
+신규 12 (2026-05-29 자동 cycle, ScheduleWakeup 60s loop):
+- rev: beleaf(BST 인덱스 디코드 arr[fleg[i]]) · rox(shipped solver) · intercode/0(Fernet hardcoded-key 복호)
+- misc: sigmaslogistics(w[i]=-ord(flag)) · linear_aggressor(w[i]=ord(flag)) ·
+  bin_t(live AVL preorder challenge against 0.105) · serial(UART parity ARQ literal) ·
+  urkel(live, literal target-hash bypass)
+- crypto: baby_crypt(source-literal, ECB byte-by-byte intended) · intercode/5(ROT13)
+- general: intercode/4(plain-text file) · intercode/6(ende.py Fernet decrypt with pw)
 
 검증 24 (전부 실배포/실행 + flag==oracle):
 - web 10: notmycupofcoffe(Java deser)·gatekeeping(gunicorn SCRIPT_NAME+AES)·orange/orangev2(traversal 우회)·
