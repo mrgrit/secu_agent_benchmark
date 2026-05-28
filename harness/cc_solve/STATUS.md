@@ -14,8 +14,9 @@
 **CC 가 못 푼 것 → 설계대로 풀에서 drop** (oracle 미확립 = 무효 task).
 
 ## 진행 (2026-05-29 현재 — results.jsonl 이 ground-truth)
-**처리 145/401**: solved-verified **98** · failed 14 · invalid 3 · blocked 4 · deferred 26
-(intercode 63건 verified·1 invalid·19 deferred:remote-only — 6v6에서 picoCTF 외부 endpoint 미배포 불가; nyu_ctf web/rev/crypto 등 별도)
+**처리 157/401**: solved-verified **105** · failed 14 · invalid 3 · blocked 4 · deferred 31
+(intercode 73건 verified·1 invalid·24 deferred — 19 remote-only + 5 OCR/WHOIS/complex-PS)
+**intercode 100건 중 78건 완전 처리 (verified 73 + invalid 1 + deferred 24)**, 남은 22건 nyu_ctf/cve_bench/cybench)
 
 신규 12 (2026-05-29 자동 cycle, ScheduleWakeup 60s loop):
 - rev: beleaf(BST 인덱스 디코드 arr[fleg[i]]) · rox(shipped solver) · intercode/0(Fernet hardcoded-key 복호)
