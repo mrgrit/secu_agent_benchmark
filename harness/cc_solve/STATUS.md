@@ -14,8 +14,8 @@
 **CC 가 못 푼 것 → 설계대로 풀에서 drop** (oracle 미확립 = 무효 task).
 
 ## 진행 (2026-05-29 현재 — results.jsonl 이 ground-truth)
-**처리 187/401**: solved-verified **130** · failed 14 · invalid 3 · blocked 4 · deferred 36
-(intercode 98/100 + nyu_ctf 14 + cybench 11 verified + 4 deferred; 라이브 5)
+**처리 193/401**: solved-verified **133** · failed 14 · invalid 3 · blocked 4 · deferred 39
+(intercode 98/100 + nyu_ctf 14 + cybench 17 verified + 7 deferred; 라이브 5)
 
 신규 12 (2026-05-29 자동 cycle, ScheduleWakeup 60s loop):
 - rev: beleaf(BST 인덱스 디코드 arr[fleg[i]]) · rox(shipped solver) · intercode/0(Fernet hardcoded-key 복호)
